@@ -1,0 +1,1356 @@
+s2s_id,s2s_route,c2c_route,distance
+0,texas - texas,humble - laredo,362
+0,texas - texas,laredo - coppell,444
+0,texas - texas,laredo - hutchins,422
+0,texas - texas,laredo - fort worth,434
+0,texas - texas,laredo - san antonio,151
+0,texas - texas,laredo - laredo,15
+0,texas - texas,fort worth - laredo,421
+0,texas - texas,laredo - katy,319
+0,texas - texas,san antonio - laredo,156
+0,texas - texas,houston - laredo,345
+0,texas - texas,laredo - houston,350
+0,texas - texas,laredo - wilmer,425
+0,texas - texas,laredo - dallas,421
+0,texas - texas,laredo - grand prairie,432
+0,texas - texas,laredo - pharr,156
+0,texas - texas,laredo - shiner,237
+0,texas - texas,irving - houston,249
+0,texas - texas,midland - laredo,518
+0,texas - texas,laredo - roanoke,438
+0,texas - texas,pleasanton - conroe,255
+0,texas - texas,laredo - lancaster,415
+0,texas - texas,laredo - waco,326
+0,texas - texas,laredo - mesquite,431
+0,texas - texas,laredo - brownwood,335
+0,texas - texas,laredo - ennis,414
+0,texas - texas,laredo - la porte,374
+0,texas - texas,dumas - laredo,668
+0,texas - texas,el paso - houston,748
+0,texas - texas,laredo - jersey village,340
+0,texas - texas,new caney - laredo,371
+0,texas - texas,laredo - rosharon,320
+0,texas - texas,laredo - frankston,453
+0,texas - texas,amarillo - laredo,627
+0,texas - texas,el paso - laredo,639
+0,texas - texas,laredo - el paso,617
+0,texas - texas,san antonio - new braunfels,36
+0,texas - texas,horizon city - el paso,21
+0,texas - texas,fort worth - pasadena,276
+0,texas - texas,houston - houston,26
+0,texas - texas,laredo - irving,424
+0,texas - texas,laredo - texarkana,602
+0,texas - texas,laredo - granbury,408
+0,texas - texas,angleton - laredo,295
+0,texas - texas,laredo - conroe,380
+0,texas - texas,laredo - spring,344
+0,texas - texas,laredo - addison,438
+0,texas - texas,laredo - balch springs,421
+0,texas - texas,laredo - beaumont,422
+0,texas - texas,addison - laredo,438
+0,texas - texas,el paso - el paso,14
+0,texas - texas,laredo - temple,471
+0,texas - texas,houston - lancaster,233
+0,texas - texas,laredo - lubbock,573
+0,texas - texas,coppell - temple,148
+0,texas - texas,laredo - carrollton,443
+0,texas - texas,laredo - pasadena,335
+0,texas - texas,coppell - houston,261
+0,texas - texas,laredo - new braunfels,187
+0,texas - texas,laredo - pearland,364
+0,texas - texas,laredo - farmers branch,440
+0,texas - texas,laredo - sherman,482
+0,texas - texas,laredo - corsicana,389
+0,texas - texas,laredo - humble,351
+0,texas - texas,laredo - frisco,462
+0,texas - texas,texarkana - laredo,602
+0,texas - texas,lolita - laredo,264
+0,texas - texas,pasadena - laredo,361
+0,texas - texas,laredo - rockwall,448
+0,texas - texas,laredo - sanger,463
+0,texas - texas,creedmoor - laredo,227
+0,texas - texas,el paso - horizon city,24
+0,texas - texas,laredo - garland,447
+0,texas - texas,dallas - terrell,40
+0,texas - texas,laredo - terrell,437
+0,texas - texas,austin - san antonio,80
+0,texas - texas,farmers branch - terrell,36
+0,texas - texas,el paso - hutchins,635
+0,texas - texas,laredo - corpus christi,145
+0,texas - texas,laredo - austin,408
+0,texas - texas,laredo - hurst,439
+0,texas - texas,el paso - canyon,398
+0,texas - texas,laredo - longview,511
+0,texas - texas,coppell - arlington,22
+0,texas - texas,laredo - grapevine,438
+0,texas - texas,arlington - laredo,437
+0,texas - texas,coppell - fort worth,35
+0,texas - texas,coppell - lubbock,342
+0,texas - texas,laredo - arlington,432
+0,texas - texas,austin - laredo,243
+0,texas - texas,hutchins - san antonio,264
+0,texas - texas,ranchos penitas west - laredo,16
+0,texas - texas,coppell - el paso,620
+0,texas - texas,coppell - rockwall,44
+0,texas - texas,coppell - austin,221
+0,texas - texas,coppell - garland,28
+0,texas - texas,hutchins - austin,199
+0,texas - texas,kyle - spring,170
+0,texas - texas,laredo - gonzales,220
+0,texas - texas,laredo - dayton,942
+0,texas - texas,laredo - denton,458
+0,texas - texas,laredo - elgin,262
+0,texas - texas,el paso - cedar hill,635
+0,texas - texas,dallas - laredo,1266
+0,texas - texas,coppell - coppell,84
+0,texas - texas,manvel - laredo,347
+0,texas - texas,laredo - bedford,435
+0,texas - texas,el paso - fort worth,598
+0,texas - texas,el paso - mesquite,639
+0,texas - texas,el paso - dallas,631
+0,texas - texas,mission - laredo,155
+0,texas - texas,waco - laredo,320
+0,texas - texas,la porte - laredo,356
+0,texas - texas,laredo - waller,346
+0,texas - texas,channelview - laredo,356
+0,texas - texas,laredo - flatonia,236
+0,texas - texas,laredo - mission,153
+0,texas - texas,fort worth - fort worth,9
+0,texas - texas,laredo - waxahachie,386
+1,hidalgo - tamaulipas,atitalaquia - nuevo laredo,665
+1,hidalgo - tamaulipas,pachuca - nuevo laredo,705
+1,hidalgo - tamaulipas,villa de tezontepec - nuevo laredo,701
+1,hidalgo - tamaulipas,tezontepec - nuevo laredo,704
+1,hidalgo - tamaulipas,tula - nuevo laredo,661
+1,hidalgo - tamaulipas,tizayuca - nuevo laredo,1070
+1,hidalgo - tamaulipas,sahagun city - nuevo laredo,712
+1,hidalgo - tamaulipas,ciudad sahagun - nuevo laredo,712
+2,estado de mexico - tamaulipas,lerma de villada - nuevo laredo,702
+2,estado de mexico - tamaulipas,cuautitlan - nuevo laredo,683
+2,estado de mexico - tamaulipas,cuautitlan de romero rubio - nuevo laredo,671
+2,estado de mexico - tamaulipas,ecatepec de morelos - nuevo laredo,687
+2,estado de mexico - tamaulipas,tlalnepantla de baz - nuevo laredo,683
+2,estado de mexico - tamaulipas,toluca de lerdo - nuevo laredo,695
+2,estado de mexico - tamaulipas,santiago teyahualco - nuevo laredo,677
+2,estado de mexico - tamaulipas,cuautitlan izcalli - nuevo laredo,670
+2,estado de mexico - tamaulipas,ciudad de mexico - nuevo laredo,688
+2,estado de mexico - tamaulipas,tultitlan de mariano escobedo - nuevo laredo,680
+2,estado de mexico - tamaulipas,cuautitlan - ldo,674
+2,estado de mexico - tamaulipas,ocoyoacac - nuevo laredo,693
+2,estado de mexico - tamaulipas,buenavista - nuevo laredo,676
+2,estado de mexico - tamaulipas,mexico - nuevo laredo,700
+2,estado de mexico - tamaulipas,tepotzotlan - nuevo laredo,667
+3,baja california - california,mexicali - pico rivera,253
+3,baja california - california,mexicali - city of industry,222
+3,baja california - california,mexicali - fresno,451
+3,baja california - california,mexicali - west sacramento,925
+3,baja california - california,mexicali - hayward,603
+3,baja california - california,mexicali - ontario,200
+3,baja california - california,mexicali - calexico,14
+3,baja california - california,mexicali - commerce,239
+3,baja california - california,mexicali - san bernardino,191
+3,baja california - california,mexicali - tracy,563
+3,baja california - california,mexicali - los angeles,241
+3,baja california - california,mexicali - lakeport,748
+3,baja california - california,mexicali - santa fe springs,235
+3,baja california - california,mexicali - apple valley,233
+3,baja california - california,tijuana - rancho cordova,539
+3,baja california - california,tijuana - montebello,136
+3,baja california - california,mexicali - merced,511
+3,baja california - california,tijuana - los angeles,145
+3,baja california - california,tijuana - city of industry,137
+3,baja california - california,mexicali - lancaster,265
+3,baja california - california,mexicali - riverside,181
+3,baja california - california,mexicali - jurupa valley,196
+3,baja california - california,mexicali - sacramento,620
+3,baja california - california,tijuana - corona,122
+3,baja california - california,mexicali - long beach,247
+4,tamaulipas - texas,nuevo laredo - laredo,14
+4,tamaulipas - texas,nuevo laredo - fort worth,443
+4,tamaulipas - texas,nuevo laredo - san antonio,165
+4,tamaulipas - texas,nuevo laredo - farmers branch,461
+4,tamaulipas - texas,nuevo laredo - granbury,410
+4,tamaulipas - texas,nuevo progreso - humble,349
+4,tamaulipas - texas,nuevo laredo - frankston,470
+4,tamaulipas - texas,nuevo laredo - dallas,441
+4,tamaulipas - texas,nuevo laredo - pasadena,354
+4,tamaulipas - texas,ldo - laredo,29
+4,tamaulipas - texas,la cruz - laredo,9
+4,tamaulipas - texas,nuevo laredo - missouri city,358
+4,tamaulipas - texas,nuevo laredo - round rock,261
+4,tamaulipas - texas,nuevo laredo - houston,358
+4,tamaulipas - texas,nuevo laredo - wichita falls,559
+4,tamaulipas - texas,nuevo laredo - denton,464
+4,tamaulipas - texas,nuevo laredo - waller,352
+4,tamaulipas - texas,nuevo laredo - lancaster,426
+4,tamaulipas - texas,nuevo laredo - commerce,500
+5,texas - kentucky,katy - louisville,1047
+5,texas - kentucky,laredo - russell springs,1222
+5,texas - kentucky,laredo - paris,1319
+5,texas - kentucky,laredo - russellville,1155
+5,texas - kentucky,laredo - madisonville,1129
+5,texas - kentucky,laredo - hebron,1355
+5,texas - kentucky,laredo - independence,1349
+5,texas - kentucky,laredo - jamestown,1224
+5,texas - kentucky,laredo - winchester,1314
+6,yucatan - tamaulipas,merida - nuevo laredo,1596
+6,yucatan - tamaulipas,paraque industrial - nuevo laredo,1368
+7,baja california - arizona,mexicali - phoenix,243
+7,baja california - arizona,mexicali - tucson,293
+7,baja california - arizona,mexicali - goodyear,225
+7,baja california - arizona,mexicali - chandler,258
+7,baja california - arizona,mexicali - buckeye,210
+7,baja california - arizona,mexicali - tolleson,234
+8,north carolina - texas,lexington - laredo,1431
+8,north carolina - texas,eden - laredo,1525
+8,north carolina - texas,rockingham - laredo,1463
+8,north carolina - texas,roxboro - laredo,1529
+8,north carolina - texas,mebane - laredo,1493
+8,north carolina - texas,salisbury - laredo,1426
+8,north carolina - texas,maiden - laredo,1386
+8,north carolina - texas,youngsville - laredo,1566
+8,north carolina - texas,louisburg - laredo,1565
+9,ohio - texas,lagrange - laredo,1656
+9,ohio - texas,sabina - laredo,1419
+9,ohio - texas,fremont - laredo,1573
+9,ohio - texas,maumee - laredo,1529
+9,ohio - texas,cleveland - laredo,1669
+9,ohio - texas,cincinnati - laredo,1367
+9,ohio - texas,lancaster - laredo,1631
+9,ohio - texas,brook park - laredo,1596
+9,ohio - texas,orwell - laredo,1637
+9,ohio - texas,englewood - laredo,1419
+9,ohio - texas,valley city - laredo,1588
+9,ohio - texas,toledo - laredo,1562
+9,ohio - texas,girard - laredo,1776
+9,ohio - texas,middletown - laredo,1394
+9,ohio - texas,west union - laredo,1378
+10,illinois - texas,skokie - laredo,1395
+10,illinois - texas,saint elmo - laredo,1209
+10,illinois - texas,alsip - laredo,1368
+10,illinois - texas,harwood heights - laredo,1398
+10,illinois - texas,carol stream - laredo,1390
+10,illinois - texas,elk grove village - laredo,1355
+10,illinois - texas,chicago heights - laredo,1363
+10,illinois - texas,hillsdale - laredo,1331
+10,illinois - texas,edwardsville - sealy,878
+10,illinois - texas,bedford park - laredo,1343
+10,illinois - texas,hoffman estates - laredo,1401
+11,virginia - texas,blacksburg - laredo,1515
+11,virginia - texas,winchester - laredo,1689
+11,virginia - texas,bedford - laredo,1554
+12,guanajuato - tamaulipas,san jose iturbide - nuevo laredo,533
+12,guanajuato - tamaulipas,silao - nuevo laredo,548
+12,guanajuato - tamaulipas,leon - nuevo laredo,563
+12,guanajuato - tamaulipas,apaseo el grande - nuevo laredo,590
+12,guanajuato - tamaulipas,salamanca - nuevo laredo,620
+12,guanajuato - tamaulipas,celaya - nuevo laredo,614
+13,kentucky - aguascalientes,walton - san francisco de los romo,1791
+13,kentucky - aguascalientes,walton - jesus gomez portugal,1830
+14,texas - tamaulipas,laredo - nuevo laredo,15
+14,texas - tamaulipas,farmers branch - nuevo laredo,438
+14,texas - tamaulipas,laredo - parque industrial oradel ii,23
+14,texas - tamaulipas,laredo - tamaulipas,21
+14,texas - tamaulipas,creedmoor - nuevo laredo,237
+14,texas - tamaulipas,san antonio - nuevo laredo,162
+14,texas - tamaulipas,la porte - nuevo laredo,341
+15,nuevo leon - mississippi,guadalupe - gulfport,894
+15,nuevo leon - mississippi,ciudad apodaca - hattiesburg,916
+16,nuevo leon - indiana,guadalupe - marion,1548
+16,nuevo leon - indiana,ciudad apodaca - south bend,1580
+16,nuevo leon - indiana,ciudad general escobedo - newburgh,1328
+17,texas - florida,laredo - coral springs,1493
+17,texas - florida,laredo - clearwater,1341
+17,texas - florida,laredo - miami,1522
+17,texas - florida,laredo - tampa,1330
+17,texas - florida,laredo - jacksonville,1213
+17,texas - florida,laredo - medley,1503
+17,texas - florida,laredo - lakeland,1346
+17,texas - florida,laredo - sanford,1300
+17,texas - florida,laredo - tavares,1281
+17,texas - florida,laredo - doral,1542
+17,texas - florida,coppell - lakeland,1222
+17,texas - florida,laredo - miami gardens,1521
+17,texas - florida,laredo - miramar,1517
+17,texas - florida,laredo - orlando,1310
+18,texas - ohio,laredo - sharonville,1366
+18,texas - ohio,laredo - marion,1440
+18,texas - ohio,laredo - columbus,1609
+18,texas - ohio,laredo - zanesville,1649
+18,texas - ohio,laredo - fremont,1571
+18,texas - ohio,laredo - van wert,1485
+18,texas - ohio,laredo - woodlawn,1369
+18,texas - ohio,laredo - pandora,1504
+18,texas - ohio,laredo - findlay,1518
+18,texas - ohio,laredo - sidney,1469
+18,texas - ohio,laredo - north canton,1738
+18,texas - ohio,el paso - fremont,1784
+18,texas - ohio,laredo - canton,1755
+18,texas - ohio,laredo - cleveland,1635
+18,texas - ohio,laredo - warren,1631
+18,texas - ohio,laredo - cincinnati,1356
+18,texas - ohio,laredo - fairfield,1378
+19,texas - indiana,laredo - indianapolis,1325
+19,texas - indiana,laredo - jeffersonville,1343
+19,texas - indiana,laredo - anderson,1373
+19,texas - indiana,laredo - nabb,1292
+19,texas - indiana,laredo - crawfordsville,1346
+19,texas - indiana,laredo - lebanon,1341
+19,texas - indiana,laredo - south bend,1439
+19,texas - indiana,coppell - south bend,984
+19,texas - indiana,coppell - lebanon,992
+19,texas - indiana,laredo - hammond,1386
+19,texas - indiana,laredo - greenfield,1349
+19,texas - indiana,laredo - kokomo,1379
+19,texas - indiana,laredo - newburgh,1183
+19,texas - indiana,laredo - new haven,1476
+19,texas - indiana,laredo - lafayette,1383
+19,texas - indiana,laredo - mishawaka,1450
+20,nuevo leon - tamaulipas,guadalupe - nuevo laredo,146
+20,nuevo leon - tamaulipas,santa catarina - nuevo laredo,157
+20,nuevo leon - tamaulipas,ciudad general escobedo - nuevo laredo,129
+20,nuevo leon - tamaulipas,ciudad de allende - nuevo laredo,177
+20,nuevo leon - tamaulipas,garcia - nuevo laredo,147
+20,nuevo leon - tamaulipas,san nicolas de los garza - nuevo laredo,136
+20,nuevo leon - tamaulipas,cienega de flores - nuevo laredo,121
+20,nuevo leon - tamaulipas,ciudad apodaca - nuevo laredo,132
+20,nuevo leon - tamaulipas,garcia - nuevo progreso,146
+20,nuevo leon - tamaulipas,el carmen - nuevo laredo,134
+20,nuevo leon - tamaulipas,salinas victoria - nuevo laredo,124
+20,nuevo leon - tamaulipas,guadalupe - la cruz,147
+20,nuevo leon - tamaulipas,monterrey - nuevo laredo,138
+20,nuevo leon - tamaulipas,salinas victoria - la cruz,130
+20,nuevo leon - tamaulipas,carmen - nuevo laredo,134
+21,texas - mississippi,laredo - gulfport,733
+21,texas - mississippi,laredo - verona,988
+21,texas - mississippi,el paso - madison,1055
+21,texas - mississippi,horizon city - madison,1038
+21,texas - mississippi,laredo - shannon,988
+21,texas - mississippi,laredo - meridian,835
+21,texas - mississippi,laredo - madison,801
+22,texas - nuevo leon,mcallen - ciudad apodaca,248
+22,texas - nuevo leon,houston - ciudad apodaca,491
+22,texas - nuevo leon,laredo - ciudad apodaca,147
+22,texas - nuevo leon,sunnyvale - san pedro garza garcia,587
+22,texas - nuevo leon,houston - guadalupe,496
+22,texas - nuevo leon,laredo - garcia,166
+22,texas - nuevo leon,el paso - san nicolas de los garza,718
+22,texas - nuevo leon,houston - parque industrial ciudad mitras,542
+22,texas - nuevo leon,laredo - ciudad santa catarina,165
+22,texas - nuevo leon,dallas - san nicolas de los garza,564
+22,texas - nuevo leon,houston - monterrey,475
+22,texas - nuevo leon,san antonio - san nicolas de los garza,293
+22,texas - nuevo leon,laredo - san nicolas de los garza,156
+22,texas - nuevo leon,laredo - salinas victoria,139
+22,texas - nuevo leon,austin - san nicolas de los garza,383
+22,texas - nuevo leon,creedmoor - cienega de flores,389
+22,texas - nuevo leon,el paso - ciudad apodaca,1432
+22,texas - nuevo leon,san antonio - cienega de flores,274
+22,texas - nuevo leon,laredo - cienega de flores,133
+22,texas - nuevo leon,san antonio - guadalupe,303
+22,texas - nuevo leon,fort worth - guadalupe,565
+22,texas - nuevo leon,dallas - guadalupe,570
+22,texas - nuevo leon,arlington - guadalupe,581
+22,texas - nuevo leon,laredo - guadalupe,157
+22,texas - nuevo leon,houston - cienega de flores,476
+22,texas - nuevo leon,austin - cienega de flores,607
+22,texas - nuevo leon,san antonio - ciudad apodaca,293
+22,texas - nuevo leon,laredo - monterrey,149
+22,texas - nuevo leon,laredo - parque industrial ciudad mitras,159
+22,texas - nuevo leon,austin - guadalupe,387
+22,texas - nuevo leon,la porte - monterrey,498
+22,texas - nuevo leon,fort worth - ciudad apodaca,1648
+23,nuevo leon - texas,guadalupe - laredo,162
+23,nuevo leon - texas,san nicolas de los garza - carrollton,590
+23,nuevo leon - texas,san nicolas de los garza - laredo,157
+23,nuevo leon - texas,ciudad apodaca - houston,483
+23,nuevo leon - texas,santa catarina - selma,331
+23,nuevo leon - texas,santa catarina - woodway,490
+23,nuevo leon - texas,ciudad general escobedo - laredo,148
+23,nuevo leon - texas,garcia - houston,582
+23,nuevo leon - texas,garcia - laredo,161
+23,nuevo leon - texas,ciudad apodaca - laredo,162
+23,nuevo leon - texas,san nicolas de los garza - el paso,828
+23,nuevo leon - texas,ciudad de allende - laredo,197
+23,nuevo leon - texas,cienega de flores - laredo,143
+23,nuevo leon - texas,san nicolas de los garza - dallas,568
+23,nuevo leon - texas,guadalupe - ennis,571
+23,nuevo leon - texas,san nicolas de los garza - farmers branch,614
+23,nuevo leon - texas,garcia - granbury,626
+23,nuevo leon - texas,san nicolas de los garza - fort worth,669
+23,nuevo leon - texas,ciudad de allende - pleasanton,312
+23,nuevo leon - texas,garcia - humble,512
+23,nuevo leon - texas,ciudad de allende - ennis,587
+23,nuevo leon - texas,ciudad de allende - lufkin,635
+23,nuevo leon - texas,garcia - kilgore,669
+23,nuevo leon - texas,san nicolas de los garza - frankston,741
+23,nuevo leon - texas,ciudad apodaca - san antonio,303
+23,nuevo leon - texas,ciudad apodaca - waller,484
+23,nuevo leon - texas,ciudad general escobedo - big lake,569
+23,nuevo leon - texas,ciudad apodaca - wichita falls,689
+23,nuevo leon - texas,san nicolas de los garza - katy,457
+23,nuevo leon - texas,ciudad apodaca - dallas,574
+23,nuevo leon - texas,colombia - laredo,27
+23,nuevo leon - texas,ciudad apodaca - fort worth,566
+23,nuevo leon - texas,monterrey - laredo,151
+23,nuevo leon - texas,san nicolas de los garza - coppell,584
+23,nuevo leon - texas,el carmen - dallas,570
+23,nuevo leon - texas,santa catarina - laredo,173
+23,nuevo leon - texas,ciudad general escobedo - houston,493
+23,nuevo leon - texas,el carmen - san antonio,304
+23,nuevo leon - texas,ciudad apodaca - sealy,439
+23,nuevo leon - texas,san nicolas de los garza - houston,510
+23,nuevo leon - texas,ciudad apodaca - missouri city,486
+23,nuevo leon - texas,salinas victoria - missouri city,476
+23,nuevo leon - texas,el carmen - houston,500
+23,nuevo leon - texas,ciudad apodaca - carrollton,582
+23,nuevo leon - texas,san nicolas de los garza - conroe,544
+23,nuevo leon - texas,cienega de flores - houston,472
+23,nuevo leon - texas,guadalupe - houston,490
+23,nuevo leon - texas,ciudad apodaca - denton,641
+23,nuevo leon - texas,ciudad apodaca - schertz,314
+23,nuevo leon - texas,ciudad apodaca - graham,608
+23,nuevo leon - texas,ciudad apodaca - san marcos,338
+23,nuevo leon - texas,ciudad apodaca - austin,378
+23,nuevo leon - texas,ciudad general escobedo - eldorado,507
+23,nuevo leon - texas,ciudad apodaca - farmers branch,578
+23,nuevo leon - texas,ciudad apodaca - round rock,388
+23,nuevo leon - texas,ciudad apodaca - kennedale,559
+23,nuevo leon - texas,cienega de flores - eldorado,496
+23,nuevo leon - texas,ciudad apodaca - kyle,353
+23,nuevo leon - texas,san nicolas de los garza - san antonio,295
+23,nuevo leon - texas,el carmen - fort worth,573
+23,nuevo leon - texas,el carmen - carrollton,601
+23,nuevo leon - texas,ciudad general escobedo - texarkana,745
+23,nuevo leon - texas,el carmen - pasadena,516
+23,nuevo leon - texas,el carmen - tyler,659
+23,nuevo leon - texas,monterrey - houston,492
+23,nuevo leon - texas,ciudad apodaca - frisco,595
+23,nuevo leon - texas,ciudad apodaca - lewisville,606
+23,nuevo leon - texas,salinas victoria - houston,479
+23,nuevo leon - texas,salinas victoria - laredo,132
+23,nuevo leon - texas,cienega de flores - big lake,558
+23,nuevo leon - texas,salinas victoria - carrollton,573
+24,puebla - texas,nopalucan de la granja - laredo,831
+24,puebla - texas,tehuacan - laredo,839
+24,puebla - texas,san pablo ahuatempa - laredo,777
+24,puebla - texas,cuautinchan - hondo,951
+25,nuevo leon - north carolina,ciudad general escobedo - reidsville,1657
+25,nuevo leon - north carolina,ciudad apodaca - reidsville,1661
+25,nuevo leon - north carolina,ciudad apodaca - youngsville,1728
+25,nuevo leon - north carolina,colombia - wilson,1589
+25,nuevo leon - north carolina,ciudad apodaca - charlotte,1550
+26,tamaulipas - hidalgo,nuevo laredo - villa de tezontepec,690
+26,tamaulipas - hidalgo,"nuevo laredo - tepeji del rio de ocampo, hgo, mexico",660
+26,tamaulipas - hidalgo,nuevo laredo - tezontepec,689
+27,california - baja california,ontario - tijuana,134
+28,estado de mexico - nuevo leon,cuautitlan - guadalupe,571
+28,estado de mexico - nuevo leon,ecatepec de morelos - entronque laredo-salinas victoria,564
+28,estado de mexico - nuevo leon,tlalnepantla de baz - entronque laredo-salinas victoria,558
+28,estado de mexico - nuevo leon,tlalnepantla de baz - ciudad general escobedo,551
+28,estado de mexico - nuevo leon,cuautitlan izcalli - monterrey,547
+28,estado de mexico - nuevo leon,ecatepec de morelos - monterrey,556
+28,estado de mexico - nuevo leon,ecatepec de morelos - salinas victoria,565
+28,estado de mexico - nuevo leon,tlalnepantla de baz - monterrey,551
+28,estado de mexico - nuevo leon,tepotzotlan - san nicolas de los garza,546
+28,estado de mexico - nuevo leon,tlalnepantla de baz - salinas victoria,563
+28,estado de mexico - nuevo leon,ecatepec de morelos - ciudad apodaca,564
+28,estado de mexico - nuevo leon,cuautitlan izcalli - guadalupe,555
+28,estado de mexico - nuevo leon,santiago teyahualco - salinas victoria,554
+28,estado de mexico - nuevo leon,cuautitlan izcalli - garcia,529
+28,estado de mexico - nuevo leon,tlalnepantla de baz - guadalupe,555
+28,estado de mexico - nuevo leon,cuautitlan izcalli - salinas victoria,554
+28,estado de mexico - nuevo leon,tepotzotlan - guadalupe,547
+28,estado de mexico - nuevo leon,ecatepec de morelos - general escobedo,555
+28,estado de mexico - nuevo leon,tlalnepantla de baz - ciudad apodaca,555
+28,estado de mexico - nuevo leon,tepotzotlan - garcia,526
+28,estado de mexico - nuevo leon,ciudad lopez mateos - monterrey,554
+28,estado de mexico - nuevo leon,cuautitlan izcalli - general zuazua,549
+28,estado de mexico - nuevo leon,ecatepec de morelos - parque industrial del norte,561
+28,estado de mexico - nuevo leon,tlalnepantla de baz - garcia,536
+28,estado de mexico - nuevo leon,tultepec - entronque laredo-salinas victoria,557
+28,estado de mexico - nuevo leon,tepotzotlan - santa catarina,524
+28,estado de mexico - nuevo leon,tepotzotlan - monterrey,545
+28,estado de mexico - nuevo leon,tlalnepantla - guadalupe,557
+28,estado de mexico - nuevo leon,tepotzotlan - salinas victoria,548
+28,estado de mexico - nuevo leon,tlalnepantla - monterrey,556
+28,estado de mexico - nuevo leon,tlalnepantla - ciudad santa catarina,533
+28,estado de mexico - nuevo leon,tepotzotlan - juarez,563
+28,estado de mexico - nuevo leon,cuautitlan izcalli - ciudad apodaca,560
+28,estado de mexico - nuevo leon,tepotzotlan - ciudad apodaca,552
+28,estado de mexico - nuevo leon,tlalnepantla - ciudad apodaca,558
+28,estado de mexico - nuevo leon,cuautitlan izcalli - cienega de flores,560
+28,estado de mexico - nuevo leon,santiago teyahualco - ciudad apodaca,557
+28,estado de mexico - nuevo leon,santiago teyahualco - ciudad santa catarina,531
+28,estado de mexico - nuevo leon,tepotzotlan - ciudad general escobedo,540
+28,estado de mexico - nuevo leon,tepotzotlan - entronque laredo-salinas victoria,547
+28,estado de mexico - nuevo leon,tlalnepantla - garcia,536
+28,estado de mexico - nuevo leon,ecatepec de morelos - garcia,542
+28,estado de mexico - nuevo leon,tlalnepantla - sfo,546
+28,estado de mexico - nuevo leon,tlalnepantla - entronque laredo-salinas victoria,557
+28,estado de mexico - nuevo leon,santiago teyahualco - entronque laredo-salinas victoria,556
+28,estado de mexico - nuevo leon,tlalnepantla - ciudad general escobedo,549
+28,estado de mexico - nuevo leon,ecatepec de morelos - ciudad general escobedo,562
+28,estado de mexico - nuevo leon,tepotzotlan - parque industrial del norte,546
+28,estado de mexico - nuevo leon,tlalnepantla - salinas victoria,556
+28,estado de mexico - nuevo leon,san mateo xoloc - ciudad apodaca,553
+28,estado de mexico - nuevo leon,santa maria totoltepec - cienega de flores,570
+28,estado de mexico - nuevo leon,santiago teyahualco - monterrey,560
+28,estado de mexico - nuevo leon,cuautitlan - ciudad apodaca,553
+28,estado de mexico - nuevo leon,toluca de lerdo - monterrey,559
+28,estado de mexico - nuevo leon,tlalnepantla de baz - juarez,571
+28,estado de mexico - nuevo leon,ecatepec de morelos - santa catarina,541
+29,nuevo leon - california,ciudad general escobedo - chino,1616
+29,nuevo leon - california,ciudad apodaca - chino,1621
+29,nuevo leon - california,santa catarina - gardena,1668
+29,nuevo leon - california,san nicolas de los garza - montebello,1633
+29,nuevo leon - california,san nicolas de los garza - fresno,1817
+29,nuevo leon - california,ciudad apodaca - fontana,1602
+29,nuevo leon - california,ciudad apodaca - corona,1606
+29,nuevo leon - california,san nicolas de los garza - los angeles,1642
+29,nuevo leon - california,san nicolas de los garza - city of industry,1627
+29,nuevo leon - california,ciudad apodaca - montebello,1638
+29,nuevo leon - california,el carmen - chino,1615
+29,nuevo leon - california,san nicolas de los garza - salinas,1943
+29,nuevo leon - california,ciudad apodaca - anaheim,1624
+29,nuevo leon - california,salinas victoria - paramount,1630
+29,nuevo leon - california,ciudad apodaca - hayward,2004
+29,nuevo leon - california,ciudad apodaca - los angeles,1682
+29,nuevo leon - california,ciudad apodaca - city of industry,1629
+29,nuevo leon - california,ciudad apodaca - riverside,1590
+29,nuevo leon - california,san nicolas de los garza - irvine,1640
+29,nuevo leon - california,san nicolas de los garza - san bernardino,1607
+29,nuevo leon - california,ciudad apodaca - el cajon,1556
+29,nuevo leon - california,carmen - montebello,1634
+29,nuevo leon - california,salinas victoria - anaheim,1610
+30,puebla - tamaulipas,nopalucan de la granja - nuevo laredo,793
+30,puebla - tamaulipas,san pablo ahuatempa - nuevo laredo,772
+30,puebla - tamaulipas,san miguel xoxtla - nuevo laredo,762
+31,hidalgo - texas,villa de tezontepec - san antonio,846
+31,hidalgo - texas,villa de tezontepec - laredo,697
+31,hidalgo - texas,tezontepec - houston,1050
+31,hidalgo - texas,villa de tezontepec - fort worth,1130
+31,hidalgo - texas,atitalaquia - laredo,672
+31,hidalgo - texas,pachuca - houston,975
+31,hidalgo - texas,pachuca - laredo,723
+31,hidalgo - texas,villa de tezontepec - houston,1044
+31,hidalgo - texas,tezontepec - laredo,702
+31,hidalgo - texas,sahagun city - laredo,748
+31,hidalgo - texas,atotonilco de tula - houston,962
+31,hidalgo - texas,tlamaco - houston,928
+31,hidalgo - texas,atitalaquia - winnsboro,1199
+31,hidalgo - texas,sahagun city - waco,1073
+31,hidalgo - texas,sahagun city - houston,1079
+31,hidalgo - texas,pachuca de soto - laredo,715
+31,hidalgo - texas,tepeapulco - laredo,1017
+31,hidalgo - texas,tepeji - san antonio,808
+31,hidalgo - texas,ciudad sahagun - laredo,1437
+31,hidalgo - texas,pachuca de soto - houston,1037
+31,hidalgo - texas,tepeapulco - waco,1068
+32,nuevo leon - south carolina,cienega de flores - pageland,1568
+32,nuevo leon - south carolina,ciudad apodaca - richburg,1541
+32,nuevo leon - south carolina,ciudad apodaca - trenton,1437
+32,nuevo leon - south carolina,monterrey - trenton,1441
+32,nuevo leon - south carolina,ciudad apodaca - fort mill,1548
+32,nuevo leon - south carolina,parque industrial ciudad mitras - trenton,1441
+32,nuevo leon - south carolina,ciudad apodaca - pageland,1581
+32,nuevo leon - south carolina,cienega de flores - darlington,1535
+32,nuevo leon - south carolina,general escobedo - pageland,1576
+33,ciudad de mexico - new york,ciudad de mexico - baldwinsville,2659
+33,ciudad de mexico - new york,ciudad de mexico - rochester,2552
+33,ciudad de mexico - new york,ciudad de mexico - milton,2742
+34,texas - missouri,laredo - maryland heights,1091
+34,texas - missouri,laredo - st. louis,1083
+34,texas - missouri,laredo - festus,1045
+34,texas - missouri,mcallen - harrisonville,1063
+34,texas - missouri,laredo - springfield,905
+34,texas - missouri,laredo - lamar,818
+34,texas - missouri,laredo - poplar bluff,929
+34,texas - missouri,laredo - sikeston,1003
+34,texas - missouri,laredo - columbia,1063
+34,texas - missouri,laredo - carthage,837
+34,texas - missouri,laredo - fenton,1095
+34,texas - missouri,laredo - riverside,966
+34,texas - missouri,coppell - riverside,516
+34,texas - missouri,laredo - saint clair,1065
+34,texas - missouri,laredo - washington,1041
+34,texas - missouri,missouri city - harrisonville,743
+35,jalisco - tamaulipas,san jose del castillo - nuevo laredo,632
+35,jalisco - tamaulipas,tequila - nuevo laredo,693
+35,jalisco - tamaulipas,el salto - nuevo laredo,1964
+35,jalisco - tamaulipas,zapopan - nuevo laredo,644
+35,jalisco - tamaulipas,parque industrial xalostoc - nuevo laredo,657
+35,jalisco - tamaulipas,guadalajara - nuevo laredo,627
+35,jalisco - tamaulipas,tlajomulco de zuniga - nuevo laredo,656
+35,jalisco - tamaulipas,el arenal - nuevo laredo,671
+35,jalisco - tamaulipas,amatitan - nuevo laredo,659
+35,jalisco - tamaulipas,san pedro tlaquepaque - nuevo laredo,634
+35,jalisco - tamaulipas,fraccionamiento los sauces - nuevo laredo,634
+36,jalisco - idaho,zapopan - twin falls,2453
+37,zacatecas - jalisco,guadalupe - acatlan de juarez,232
+37,zacatecas - jalisco,zacatecas - acatlan de juarez,238
+38,nuevo leon - alabama,ciudad apodaca - troy,1126
+38,nuevo leon - alabama,ciudad general escobedo - troy,1144
+38,nuevo leon - alabama,ciudad apodaca - hanceville,1193
+39,texas - washington,laredo - walla walla,2075
+39,texas - washington,mcallen - sumner,2555
+39,texas - washington,mcallen - seattle,2546
+40,tamaulipas - nuevo leon,nuevo laredo - ciudad apodaca,132
+40,tamaulipas - nuevo leon,nuevo laredo - cienega de flores,122
+40,tamaulipas - nuevo leon,nuevo laredo - monterrey,133
+40,tamaulipas - nuevo leon,nuevo laredo - sabinas hidalgo,85
+40,tamaulipas - nuevo leon,nuevo laredo - san nicolas de los garza,135
+40,tamaulipas - nuevo leon,nuevo laredo - guadalupe,144
+40,tamaulipas - nuevo leon,nuevo laredo - salinas victoria,123
+41,wisconsin - texas,deforest - laredo,1433
+41,wisconsin - texas,milwaukee - laredo,1428
+41,wisconsin - texas,germantown - laredo,1439
+41,wisconsin - texas,kenosha - palestine,1049
+42,ciudad de mexico - tamaulipas,ciudad de mexico - miramar,331
+42,ciudad de mexico - tamaulipas,ciudad de mexico - ldo,702
+43,west virginia - texas,spencer - laredo,1640
+44,texas - georgia,mcallen - smyrna,1187
+44,texas - georgia,laredo - lagrange,1065
+44,texas - georgia,laredo - rome,1142
+44,texas - georgia,laredo - duluth,1165
+44,texas - georgia,laredo - atlanta,1145
+44,texas - georgia,laredo - bainbridge,1075
+44,texas - georgia,laredo - austell,1145
+44,texas - georgia,laredo - doraville,1172
+44,texas - georgia,coppell - atlanta,807
+44,texas - georgia,laredo - stillmore,1244
+44,texas - georgia,laredo - lithia springs,1144
+44,texas - georgia,laredo - smyrna,1114
+44,texas - georgia,laredo - thomasville,1072
+44,texas - georgia,laredo - marietta,1161
+44,texas - georgia,laredo - monroe,1183
+44,texas - georgia,laredo - villa rica,1122
+44,texas - georgia,coppell - duluth,828
+44,texas - georgia,laredo - jonesboro,1143
+44,texas - georgia,laredo - claxton,1274
+44,texas - georgia,laredo - twin city,1247
+44,texas - georgia,el paso - monroe,1462
+44,texas - georgia,laredo - kennesaw,1173
+45,texas - new york,laredo - baldwinsville,1978
+45,texas - new york,laredo - north collins,1768
+45,texas - new york,laredo - rochester,1859
+45,texas - new york,laredo - niagara falls,1852
+45,texas - new york,laredo - milton,2086
+45,texas - new york,laredo - north tonawanda,1856
+45,texas - new york,laredo - islip,2184
+45,texas - new york,laredo - albany,2103
+46,texas - arizona,laredo - chandler,1114
+46,texas - arizona,laredo - phoenix,1123
+46,texas - arizona,el paso - mesa,436
+46,texas - arizona,katy - avondale,1167
+46,texas - arizona,laredo - kingman,1263
+47,texas - virginia,laredo - salem,1516
+47,texas - virginia,laredo - alexandria,1772
+47,texas - virginia,laredo - lorton,1760
+47,texas - virginia,laredo - henrico,1667
+47,texas - virginia,laredo - fredericksburg,1721
+47,texas - virginia,laredo - elkton,1624
+47,texas - virginia,laredo - bristol,1396
+47,texas - virginia,laredo - prince george,1685
+47,texas - virginia,laredo - front royal,1734
+47,texas - virginia,laredo - franconia,1769
+48,ciudad de mexico - pennsylvania,ciudad de mexico - breinigsville,2596
+48,ciudad de mexico - pennsylvania,ciudad de mexico - pottsville,2560
+49,queretaro - illinois,santiago de queretaro - forest park,1957
+49,queretaro - illinois,santiago de queretaro - romeoville,1913
+49,queretaro - illinois,santiago de queretaro - bolingbrook,1912
+49,queretaro - illinois,santiago de queretaro - edwardsville,1665
+50,jalisco - texas,atotonilquillo - laredo,658
+50,jalisco - texas,tequila - laredo,706
+50,jalisco - texas,zapopan - fort worth,1069
+50,jalisco - texas,zapopan - el paso,977
+50,jalisco - texas,guadalajara - laredo,652
+50,jalisco - texas,zapopan - laredo,657
+50,jalisco - texas,tonala - houston,996
+50,jalisco - texas,santa cruz de las flores - houston,1047
+50,jalisco - texas,guadalajara - houston,996
+50,jalisco - texas,el arenal - laredo,693
+50,jalisco - texas,san jose del castillo - san antonio,785
+50,jalisco - texas,san jose del castillo - fort worth,1070
+50,jalisco - texas,san miguel el alto - laredo,570
+50,jalisco - texas,san jose del castillo - laredo,636
+50,jalisco - texas,san jose del castillo - dallas,1052
+50,jalisco - texas,tequila - houston,1050
+51,texas - pennsylvania,laredo - breinigsville,1907
+51,texas - pennsylvania,laredo - chambersburg,1758
+51,texas - pennsylvania,laredo - brookville,1721
+51,texas - pennsylvania,laredo - manheim,1932
+51,texas - pennsylvania,laredo - leetsdale,1727
+51,texas - pennsylvania,laredo - ellwood city,1802
+51,texas - pennsylvania,laredo - harrisburg,1433
+51,texas - pennsylvania,laredo - hatfield,1946
+51,texas - pennsylvania,laredo - wilkes-barre,1941
+51,texas - pennsylvania,laredo - pittston,2052
+51,texas - pennsylvania,brownsville - sharon,1768
+51,texas - pennsylvania,laredo - taylor,2083
+51,texas - pennsylvania,coppell - pittston,1623
+51,texas - pennsylvania,laredo - bridgeville,1719
+51,texas - pennsylvania,laredo - scranton,2079
+51,texas - pennsylvania,laredo - pottsville,1876
+51,texas - pennsylvania,laredo - reading,1928
+52,jalisco - utah,zapopan - salt lake city,2104
+52,jalisco - utah,zapopan - clearfield,2268
+52,jalisco - utah,zapopan - south salt lake,2263
+53,estado de mexico - florida,tultitlan de mariano escobedo - clearwater,2020
+53,estado de mexico - florida,lerma de villada - jacksonville,1905
+53,estado de mexico - florida,toluca de lerdo - jacksonville,1839
+53,estado de mexico - florida,santa maria totoltepec - jacksonville,2544
+54,new mexico - texas,santa teresa - laredo,665
+54,new mexico - texas,santa teresa - new braunfels,594
+55,indiana - texas,fort wayne - laredo,1430
+55,indiana - texas,auburn - laredo,1455
+55,indiana - texas,south bend - laredo,1450
+55,indiana - texas,columbus - sealy,1071
+55,indiana - texas,trail creek - laredo,1428
+55,indiana - texas,lafayette - laredo,971
+56,nuevo leon - missouri,guadalupe - st. louis,1242
+56,nuevo leon - missouri,guadalupe - columbia,1259
+56,nuevo leon - missouri,ciudad general escobedo - sedalia,1153
+56,nuevo leon - missouri,guadalupe - festus,1201
+56,nuevo leon - missouri,parque industrial ciudad mitras - o'fallon,1280
+56,nuevo leon - missouri,san nicolas de los garza - kansas city,1206
+56,nuevo leon - missouri,san nicolas de los garza - st. louis,1303
+56,nuevo leon - missouri,guadalupe - st. peters,1255
+56,nuevo leon - missouri,ciudad apodaca - st. louis,1242
+56,nuevo leon - missouri,san nicolas de los garza - st. louis county,1344
+56,nuevo leon - missouri,san nicolas de los garza - north kansas city,1262
+56,nuevo leon - missouri,juarez - washington,1216
+56,nuevo leon - missouri,guadalupe - house springs,1223
+57,wisconsin - ciudad de mexico,chippewa falls - ciudad de mexico,2185
+58,texas - california,laredo - fontana,1509
+58,texas - california,laredo - chino,1444
+58,texas - california,laredo - san diego,1429
+58,texas - california,laredo - vernon,1516
+58,texas - california,el paso - west sacramento,1198
+58,texas - california,el paso - santa fe springs,806
+58,texas - california,laredo - hayward,1867
+58,texas - california,laredo - fresno,1617
+58,texas - california,laredo - la mirada,1393
+58,texas - california,laredo - buena park,1491
+58,texas - california,laredo - ontario,1461
+58,texas - california,laredo - jurupa valley,1451
+58,texas - california,laredo - pico rivera,1497
+58,texas - california,coppell - hayward,1814
+58,texas - california,laredo - san bernardino,1448
+58,texas - california,laredo - vista,1451
+58,texas - california,ennis - red bluff,1910
+58,texas - california,humble - porterville,1724
+58,texas - california,laredo - bakersfield,1625
+58,texas - california,laredo - modesto,1712
+58,texas - california,laredo - pomona,1467
+58,texas - california,laredo - stockton,1739
+58,texas - california,laredo - lodi,1758
+58,texas - california,laredo - south gate,1496
+58,texas - california,katy - porterville,1673
+58,texas - california,laredo - tracy,1811
+58,texas - california,laredo - west sacramento,1895
+58,texas - california,laredo - santa fe springs,1496
+58,texas - california,hutchins - santa fe springs,1467
+58,texas - california,coppell - pico rivera,1459
+58,texas - california,coppell - west sacramento,1790
+58,texas - california,laredo - oceanside,1347
+58,texas - california,coppell - fresno,1534
+58,texas - california,coppell - long beach,1457
+58,texas - california,laredo - montebello,1499
+58,texas - california,laredo - oxnard,1566
+58,texas - california,carrollton - sacramento,1794
+58,texas - california,midlothian - sacramento,1827
+58,texas - california,laredo - commerce,1501
+58,texas - california,ennis - sacramento,1854
+59,texas - colorado,laredo - windsor,1150
+59,texas - colorado,laredo - fort collins,1155
+59,texas - colorado,laredo - greeley,1149
+59,texas - colorado,laredo - denver,1090
+59,texas - colorado,laredo - englewood,1088
+60,texas - tennessee,laredo - knoxville,1271
+60,texas - tennessee,laredo - huntingdon,1001
+60,texas - tennessee,laredo - waverly,1037
+60,texas - tennessee,laredo - johnson city,1341
+60,texas - tennessee,laredo - dickson,1046
+60,texas - tennessee,laredo - clinton,1291
+60,texas - tennessee,coppell - clinton,876
+60,texas - tennessee,laredo - andersonville,1286
+60,texas - tennessee,coppell - memphis,484
+60,texas - tennessee,laredo - loudon,1248
+61,texas - coahuila,houston - ramos arizpe,372
+61,texas - coahuila,farmers branch - ramos arizpe,438
+61,texas - coahuila,fort worth - ramos arizpe,410
+61,texas - coahuila,amarillo - ramos arizpe,623
+61,texas - coahuila,laredo - saltillo,197
+62,ciudad de mexico - coahuila,ciudad de mexico - nava municipality,749
+63,texas - queretaro,mineral wells - benito juarez,975
+63,texas - queretaro,dumas - parque industrial queretaro,669
+63,texas - queretaro,laredo - santiago de queretaro,565
+63,texas - queretaro,el paso - santiago de queretaro,1004
+64,texas - alabama,laredo - sheffield,1021
+64,texas - alabama,laredo - leeds,1018
+64,texas - alabama,laredo - muscle shoals,1034
+64,texas - alabama,laredo - ashville,1042
+64,texas - alabama,laredo - bridgeport,1161
+64,texas - alabama,laredo - florence,1026
+64,texas - alabama,laredo - trussville,1012
+64,texas - alabama,laredo - birmingham,1004
+64,texas - alabama,laredo - warrior,1027
+64,texas - alabama,laredo - mccalla,959
+64,texas - alabama,laredo - mobile,781
+64,texas - alabama,laredo - loxley,836
+64,texas - alabama,laredo - auburn,1033
+65,texas - illinois,laredo - chicago,1374
+65,texas - illinois,laredo - rockford,1372
+65,texas - illinois,mcallen - morris,1519
+65,texas - illinois,laredo - mascoutah,1109
+65,texas - illinois,laredo - carol stream,1378
+65,texas - illinois,laredo - bolingbrook,1335
+65,texas - illinois,laredo - itasca,1378
+65,texas - illinois,laredo - melrose park,1371
+65,texas - illinois,laredo - west chicago,1371
+65,texas - illinois,laredo - lemont,1358
+65,texas - illinois,laredo - oswego,1348
+65,texas - illinois,laredo - aurora,1389
+65,texas - illinois,laredo - broadview,1385
+65,texas - illinois,laredo - chicago ridge,1361
+65,texas - illinois,laredo - rock falls,1357
+65,texas - illinois,laredo - wheeling,1408
+65,texas - illinois,laredo - bensenville,1391
+65,texas - illinois,laredo - spring grove,1410
+65,texas - illinois,laredo - lake zurich,1408
+65,texas - illinois,laredo - romeoville,1344
+65,texas - illinois,laredo - mchenry,1413
+65,texas - illinois,coppell - bolingbrook,894
+65,texas - illinois,midlothian - elwood,905
+65,texas - illinois,laredo - bedford park,1363
+66,texas - new jersey,laredo - plainfield,1991
+66,texas - new jersey,laredo - hamilton township,2079
+66,texas - new jersey,laredo - monroe township,2117
+66,texas - new jersey,laredo - neptune city,2115
+66,texas - new jersey,laredo - south plainfield,2134
+66,texas - new jersey,laredo - burlington,1813
+66,texas - new jersey,laredo - pennsauken township,2029
+66,texas - new jersey,laredo - south brunswick township,1912
+66,texas - new jersey,coppell - mount olive,1640
+66,texas - new jersey,laredo - mount olive,2015
+67,texas - michigan,laredo - battle creek,1508
+67,texas - michigan,laredo - muskegon,1523
+67,texas - michigan,mcallen - belleville,1729
+67,texas - michigan,laredo - farmington hills,1619
+67,texas - michigan,laredo - madison heights,1646
+67,texas - michigan,laredo - newberry,1783
+67,texas - michigan,laredo - greenville,1564
+67,texas - michigan,dallas - brownstown charter township,1327
+67,texas - michigan,laredo - sterling heights,1657
+67,texas - michigan,laredo - brownstown charter township,1591
+67,texas - michigan,coppell - grandville,1064
+67,texas - michigan,laredo - wayne,1601
+67,texas - michigan,el paso - saginaw,1881
+67,texas - michigan,mesquite - brownstown charter township,1233
+68,ciudad de mexico - texas,ciudad de mexico - laredo,699
+68,ciudad de mexico - texas,ciudad de mexico - irving,1121
+68,ciudad de mexico - texas,ciudad de mexico - houston,1033
+68,ciudad de mexico - texas,alvaro obregon - laredo,1411
+68,ciudad de mexico - texas,ciudad de mexico - granbury,1128
+69,ciudad de mexico - jalisco,ciudad de mexico - guadalajara,337
+69,ciudad de mexico - jalisco,ciudad de mexico - el salto,341
+69,ciudad de mexico - jalisco,ciudad de mexico - zapopan,348
+70,queretaro - texas,santa rosa jauregui - laredo,569
+70,queretaro - texas,benito juarez - mineral wells,974
+70,queretaro - texas,santiago de queretaro - laredo,1406
+70,queretaro - texas,santa rosa jauregui - brownwood,896
+70,queretaro - texas,queretaro - desoto,558
+70,queretaro - texas,queretaro - coppell,842
+70,queretaro - texas,san juan del rio - laredo,605
+70,queretaro - texas,queretaro - san antonio,558
+70,queretaro - texas,bernal - laredo,605
+70,queretaro - texas,colon - laredo,604
+70,queretaro - texas,santiago de queretaro - houston,925
+71,texas - jalisco,laredo - san martin de zula,653
+71,texas - jalisco,laredo - zapopan,654
+71,texas - jalisco,laredo - guadalajara,646
+71,texas - jalisco,laredo - la venta del astillero,656
+71,texas - jalisco,laredo - santa cruz del valle,656
+72,estado de mexico - texas,tultitlan de mariano escobedo - dallas,1123
+72,estado de mexico - texas,cuautitlan - laredo,690
+72,estado de mexico - texas,tlalnepantla de baz - laredo,697
+72,estado de mexico - texas,naucalpan de juarez - waller,1042
+72,estado de mexico - texas,buenavista - houston,1029
+72,estado de mexico - texas,cuautitlan - san antonio,679
+72,estado de mexico - texas,metepec - laredo,702
+72,estado de mexico - texas,cuautitlan - el paso,1126
+72,estado de mexico - texas,fuentes del valle - laredo,684
+72,estado de mexico - texas,toluca de lerdo - laredo,710
+72,estado de mexico - texas,santiago teyahualco - laredo,699
+72,estado de mexico - texas,san mateo atenco - laredo,696
+72,estado de mexico - texas,tultitlan de mariano escobedo - san antonio,1520
+72,estado de mexico - texas,fuentes del valle - dallas,1811
+72,estado de mexico - texas,ecatepec de morelos - laredo,720
+72,estado de mexico - texas,tultitlan de mariano escobedo - carrollton,1124
+72,estado de mexico - texas,tepotzotlan - laredo,681
+72,estado de mexico - texas,san cristobal nexquipayac - houston,1047
+73,baja california - nevada,mexicali - las vegas,380
+73,baja california - nevada,tijuana - carson city,553
+74,baja california - colorado,mexicali - loveland,1100
+74,baja california - colorado,mexicali - longmont,1161
+74,baja california - colorado,mexicali - aurora,1147
+74,baja california - colorado,mexicali - denver,1150
+75,kentucky - texas,walton - laredo,1340
+76,baja california - new mexico,mexicali - albuquerque,700
+77,tamaulipas - estado de mexico,nuevo laredo - tepotzotlan,669
+77,tamaulipas - estado de mexico,nuevo laredo - cuautitlan,675
+77,tamaulipas - estado de mexico,nuevo laredo - ecatepec de morelos,689
+77,tamaulipas - estado de mexico,nuevo laredo - tultitlan de mariano escobedo,667
+78,texas - estado de mexico,laredo - tepotzotlan,688
+78,texas - estado de mexico,laredo - naucalpan de juarez,725
+78,texas - estado de mexico,laredo - cuautitlan,688
+78,texas - estado de mexico,laredo - cuautitlan de romero rubio,688
+78,texas - estado de mexico,laredo - tultitlan de mariano escobedo,688
+78,texas - estado de mexico,laredo - ciudad de mexico,710
+78,texas - estado de mexico,laredo - tlalnepantla de baz,698
+78,texas - estado de mexico,laredo - cuautitlan izcalli,684
+78,texas - estado de mexico,laredo - toluca de lerdo,711
+78,texas - estado de mexico,laredo - san bartolome coatepec,705
+78,texas - estado de mexico,laredo - toluca,686
+78,texas - estado de mexico,laredo - ecatepec de morelos,704
+78,texas - estado de mexico,laredo - santa maria rayon,720
+78,texas - estado de mexico,dallas - cuautitlan izcalli,1111
+78,texas - estado de mexico,laredo - tlalnepantla,696
+78,texas - estado de mexico,laredo - fuentes del valle,692
+78,texas - estado de mexico,laredo - atlacomulco,658
+79,nuevo leon - ohio,guadalupe - sharonville,1522
+79,nuevo leon - ohio,guadalupe - zanesville,1735
+79,nuevo leon - ohio,guadalupe - warren,1836
+79,nuevo leon - ohio,san nicolas de los garza - beckett ridge,1577
+79,nuevo leon - ohio,guadalupe - grove city,1755
+79,nuevo leon - ohio,guadalupe - cincinnati,1515
+79,nuevo leon - ohio,guadalupe - columbus,1765
+79,nuevo leon - ohio,parque industrial ciudad mitras - sidney,1611
+80,nuevo leon - estado de mexico,ciudad apodaca - jilotepec de molina enriquez,523
+80,nuevo leon - estado de mexico,ciudad apodaca - tepotzotlan,552
+80,nuevo leon - estado de mexico,ciudad apodaca - lerma de villada,573
+80,nuevo leon - estado de mexico,ciudad apodaca - cuautitlan izcalli,555
+80,nuevo leon - estado de mexico,ciudad apodaca - chalco de diaz covarrubias,602
+80,nuevo leon - estado de mexico,ciudad apodaca - tecamac de felipe villanueva,575
+80,nuevo leon - estado de mexico,ciudad apodaca - tealoyucan,549
+80,nuevo leon - estado de mexico,ciudad apodaca - villas de tecamac,568
+80,nuevo leon - estado de mexico,ciudad apodaca - tultitlan de mariano escobedo,555
+81,texas - hidalgo,houston - villa de tezontepec,1046
+81,texas - hidalgo,laredo - villa de tezontepec,702
+82,nuevo leon - arizona,guadalupe - gilbert,1295
+82,nuevo leon - arizona,san nicolas de los garza - phoenix,1244
+82,nuevo leon - arizona,salinas victoria - queen creek,1121
+82,nuevo leon - arizona,ciudad apodaca - phoenix,1284
+82,nuevo leon - arizona,salinas victoria - phoenix,1232
+82,nuevo leon - arizona,ciudad apodaca - tucson,1163
+82,nuevo leon - arizona,carmen - chandler,1255
+83,coahuila - tamaulipas,ramos arizpe - nuevo laredo,178
+83,coahuila - tamaulipas,arteaga - nuevo laredo,183
+84,nuevo leon - nuevo leon,monterrey - ciudad apodaca,10
+84,nuevo leon - nuevo leon,cienega de flores - ciudad apodaca,18
+84,nuevo leon - nuevo leon,ciudad santa catarina - ciudad apodaca,39
+84,nuevo leon - nuevo leon,guadalupe - ciudad apodaca,15
+84,nuevo leon - nuevo leon,sabinas hidalgo - ciudad apodaca,64
+84,nuevo leon - nuevo leon,sabinas hidalgo - cienega de flores,45
+85,texas - north carolina,laredo - wilson,1581
+85,texas - north carolina,laredo - aberdeen,1499
+85,texas - north carolina,coppell - harrisburg,1082
+85,texas - north carolina,laredo - hickory,1397
+85,texas - north carolina,laredo - youngsville,1587
+85,texas - north carolina,laredo - statesville,1430
+85,texas - north carolina,laredo - lumberton,1469
+85,texas - north carolina,laredo - burgaw,1561
+85,texas - north carolina,laredo - gastonia,1379
+85,texas - north carolina,laredo - charlotte,1402
+85,texas - north carolina,laredo - albemarle,1459
+87,ciudad de mexico - estado de mexico,ciudad de mexico - toluca,44
+87,ciudad de mexico - estado de mexico,ciudad de mexico - tepotzotlan,21
+87,ciudad de mexico - estado de mexico,ciudad de mexico - cuautitlan izcalli,18
+87,ciudad de mexico - estado de mexico,ciudad de mexico - tultitlan de mariano escobedo,18
+87,ciudad de mexico - estado de mexico,ciudad de mexico - tlalnepantla de baz,10
+88,california - texas,boron - laredo,1531
+88,california - texas,city of industry - el paso,785
+88,california - texas,ventura - laredo,1535
+88,california - texas,ontario - laredo,1445
+88,california - texas,acampo - laredo,1755
+88,california - texas,orange - laredo,1508
+88,california - texas,hanford - mcallen,1853
+88,california - texas,azusa - laredo,1511
+88,california - texas,anaheim - laredo,1511
+88,california - texas,fresno - laredo,1616
+88,california - texas,lathrop - mcallen,1968
+88,california - texas,santa fe springs - sealy,1493
+89,illinois - indiana,danville - seymour,150
+90,missouri - texas,ellsinore - laredo,984
+90,missouri - texas,st peters - new braunfels,878
+90,missouri - texas,union - new braunfels,826
+90,missouri - texas,farmington - laredo,1031
+90,missouri - texas,st. peters - new braunfels,916
+90,missouri - texas,kansas city - laredo,968
+90,missouri - texas,kansas city - socorro,954
+90,missouri - texas,fenton - laredo,1106
+90,missouri - texas,st. louis - new braunfels,892
+91,queretaro - tamaulipas,santiago de queretaro - nuevo laredo,564
+91,queretaro - tamaulipas,san juan del rio - nuevo laredo,593
+91,queretaro - tamaulipas,queretaro - nuevo laredo,548
+91,queretaro - tamaulipas,santa rosa jauregui - altamira,400
+91,queretaro - tamaulipas,santa rosa jauregui - tampico,390
+91,queretaro - tamaulipas,santa rosa jauregui - ciudad victoria,315
+91,queretaro - tamaulipas,santa rosa jauregui - nuevo laredo,557
+92,minnesota - texas,melrose - laredo,1498
+92,minnesota - texas,clearbrook - laredo,1596
+93,tennessee - texas,dickson - laredo,1056
+93,tennessee - texas,la vergne - laredo,1109
+93,tennessee - texas,chattanooga - laredo,1154
+93,tennessee - texas,lynchburg - laredo,1161
+94,nuevo leon - michigan,guadalupe - muskegon,1681
+94,nuevo leon - michigan,ciudad apodaca - madison heights,1808
+94,nuevo leon - michigan,parque industrial regiomontana - madison heights,1776
+95,vermont - coahuila de zaragoza,saint johnsbury - arteaga,3161
+96,guanajuato - texas,san jose iturbide - laredo,564
+96,guanajuato - texas,silao - laredo,564
+96,guanajuato - texas,celaya - laredo,625
+96,guanajuato - texas,colonia nuevo mexico - laredo,561
+96,guanajuato - texas,silao de la victoria - laredo,577
+96,guanajuato - texas,apaseo el grande - laredo,600
+96,guanajuato - texas,san francisco del rincon - laredo,580
+96,guanajuato - texas,salamanca - laredo,631
+97,aguascalientes - texas,aguascalientes - laredo,505
+98,estado de mexico - baja california,tlalnepantla de baz - tijuana,1704
+98,estado de mexico - baja california,ecatepec de morelos - mexicali,1609
+98,estado de mexico - baja california,tepotzotlan - tijuana,1695
+98,estado de mexico - baja california,ecatepec de morelos - tijuana,1710
+98,estado de mexico - baja california,tepotzotlan - mexicali,1593
+98,estado de mexico - baja california,tlalnepantla de baz - mexicali,1598
+98,estado de mexico - baja california,cuautitlan izcalli - mexicali,1606
+98,estado de mexico - baja california,tlalnepantla - tijuana,1706
+98,estado de mexico - baja california,tlalnepantla - mexicali,1601
+98,estado de mexico - baja california,santiago teyahualco - mexicali,1605
+98,estado de mexico - baja california,san nicolas tolentino - tijuana,1679
+98,estado de mexico - baja california,san nicolas tolentino - mexicali,1578
+98,estado de mexico - baja california,cuautitlan izcalli - tijuana,1708
+98,estado de mexico - baja california,santiago teyahualco - tijuana,1701
+98,estado de mexico - baja california,tepotzotlan - san felipe,1685
+98,estado de mexico - baja california,toluca de lerdo - tijuana,1689
+98,estado de mexico - baja california,tlalnepantla de baz - progreso,1617
+98,estado de mexico - baja california,cuautitlan izcalli - progreso,1617
+98,estado de mexico - baja california,ecatepec de morelos - progreso,1624
+98,estado de mexico - baja california,tepotzotlan - progreso,1607
+98,estado de mexico - baja california,fuentes del valle - mexicali,1604
+98,estado de mexico - baja california,santiago teyahualco - progreso,1617
+98,estado de mexico - baja california,tlalnepantla - baja california,1602
+98,estado de mexico - baja california,tlalnepantla - portico de san antonio,1707
+98,estado de mexico - baja california,ecatepec de morelos - baja california,1609
+98,estado de mexico - baja california,tlalnepantla - san felipe,1695
+98,estado de mexico - baja california,tlalnepantla - progreso,1617
+98,estado de mexico - baja california,santiago teyahualco - baja california,1601
+98,estado de mexico - baja california,toluca de lerdo - mexicali,1600
+99,aguascalientes - tamaulipas,aguascalientes - nuevo laredo,493
+99,aguascalientes - tamaulipas,san francisco de los romo - nuevo laredo,475
+100,wisconsin - aguascalientes,milwaukee - san francisco de los romo,1970
+101,coahuila de zaragoza - estado de mexico,ramos arizpe - ciudad de mexico,507
+101,coahuila de zaragoza - estado de mexico,ramos arizpe - tultitlan de mariano escobedo,507
+101,coahuila de zaragoza - estado de mexico,ramos arizpe - chalco de diaz covarrubias,550
+101,coahuila de zaragoza - estado de mexico,ramos arizpe - ecatepec de morelos,513
+101,coahuila de zaragoza - estado de mexico,ramos arizpe - tepotzotlan,498
+101,coahuila de zaragoza - estado de mexico,ramos arizpe - cuautitlan izcalli,502
+101,coahuila de zaragoza - estado de mexico,ramos arizpe - tlalnepantla de baz,510
+101,coahuila de zaragoza - estado de mexico,ramos arizpe - santiago teyahualco,507
+102,nuevo leon - massachusetts,san nicolas de los garza - methuen,2467
+102,nuevo leon - massachusetts,san nicolas de los garza - lawrence,2450
+102,nuevo leon - massachusetts,san nicolas de los garza - haverhill,2342
+102,nuevo leon - massachusetts,san nicolas de los garza - westminster,2310
+102,nuevo leon - massachusetts,ciudad apodaca - lawrence,2459
+102,nuevo leon - massachusetts,san nicolas de los garza - springfield,2393
+102,nuevo leon - massachusetts,san nicolas de los garza - holyoke,2259
+103,estado de mexico - estado de mexico,cuautitlan izcalli - tepotzotlan,8
+103,estado de mexico - estado de mexico,cuautitlan izcalli - cuautitlan,13
+103,estado de mexico - estado de mexico,cuautitlan izcalli - ciudad lopez mateos,9
+103,estado de mexico - estado de mexico,cuautitlan izcalli - tealoyucan,19
+103,estado de mexico - estado de mexico,cuautitlan izcalli - ocoyoacac,44
+103,estado de mexico - estado de mexico,toluca de lerdo - tepotzotlan,49
+103,estado de mexico - estado de mexico,cuautitlan izcalli - cuautitlan izcalli,8
+103,estado de mexico - estado de mexico,ecatepec de morelos - cuautitlan izcalli,23
+103,estado de mexico - estado de mexico,cuautitlan izcalli - tultitlan de mariano escobedo,5
+103,estado de mexico - estado de mexico,tepotzotlan - chalco de diaz covarrubias,61
+103,estado de mexico - estado de mexico,san pedro totoltepec - tepotzotlan,47
+103,estado de mexico - estado de mexico,tlalnepantla - tepotzotlan,13
+103,estado de mexico - estado de mexico,tlalnepantla - la providencia,21
+103,estado de mexico - estado de mexico,tlalnepantla - ciudad de mexico,4
+103,estado de mexico - estado de mexico,santiago teyahualco - cuautitlan izcalli,9
+103,estado de mexico - estado de mexico,santiago teyahualco - chalco de diaz covarrubias,54
+103,estado de mexico - estado de mexico,ecatepec de morelos - tultitlan de mariano escobedo,13
+103,estado de mexico - estado de mexico,tepotzotlan - cuautitlan izcalli,8
+103,estado de mexico - estado de mexico,tlalnepantla - cuautitlan izcalli,9
+103,estado de mexico - estado de mexico,santiago teyahualco - tultitlan de mariano escobedo,6
+103,estado de mexico - estado de mexico,cuautitlan izcalli - chalco de diaz covarrubias,48
+103,estado de mexico - estado de mexico,tlalnepantla - tultitlan de mariano escobedo,6
+103,estado de mexico - estado de mexico,ecatepec de morelos - santiago teyahualco,18
+103,estado de mexico - estado de mexico,cuautitlan izcalli - buenavista,6
+103,estado de mexico - estado de mexico,ecatepec de morelos - chalco de diaz covarrubias,39
+103,estado de mexico - estado de mexico,tlalnepantla de baz - ecatepec de morelos,14
+103,estado de mexico - estado de mexico,tlalnepantla de baz - tepotzotlan,15
+103,estado de mexico - estado de mexico,tepotzotlan - tultitlan de mariano escobedo,10
+103,estado de mexico - estado de mexico,tlalnepantla - chalco de diaz covarrubias,44
+103,estado de mexico - estado de mexico,tlalnepantla - valle de chalco solidaridad,36
+103,estado de mexico - estado de mexico,tepotzotlan - tepotzotlan,3
+103,estado de mexico - estado de mexico,tepotzotlan - buenavista,11
+103,estado de mexico - estado de mexico,cuautitlan izcalli - ixtapaluca,41
+103,estado de mexico - estado de mexico,santiago teyahualco - ciudad de mexico,7
+103,estado de mexico - estado de mexico,cuautitlan izcalli - san francisco coacalco,10
+103,estado de mexico - estado de mexico,cuautitlan izcalli - tlalnepantla,7
+103,estado de mexico - estado de mexico,cuautitlan izcalli - naucalpan de juarez,23
+103,estado de mexico - estado de mexico,cuautitlan izcalli - fuentes del valle,6
+103,estado de mexico - estado de mexico,cuautitlan izcalli - ecatepec de morelos,26
+103,estado de mexico - estado de mexico,santiago teyahualco - tepotzotlan,12
+103,estado de mexico - estado de mexico,ecatepec de morelos - tlalnepantla,18
+103,estado de mexico - estado de mexico,ecatepec de morelos - tepotzotlan,28
+103,estado de mexico - estado de mexico,santiago teyahualco - tlalnepantla,11
+103,estado de mexico - estado de mexico,tlalnepantla - buenavista,4
+103,estado de mexico - estado de mexico,tlalnepantla - tealoyucan,20
+103,estado de mexico - estado de mexico,tlalnepantla - coacalco,9
+103,estado de mexico - estado de mexico,tlalnepantla - tepexpan,28
+103,estado de mexico - estado de mexico,santiago teyahualco - tealoyucan,13
+103,estado de mexico - estado de mexico,tlalnepantla - cuautitlan,10
+103,estado de mexico - estado de mexico,tlalnepantla - ecatepec de morelos,24
+103,estado de mexico - estado de mexico,tlalnepantla - naucalpan de juarez,11
+103,estado de mexico - estado de mexico,tlalnepantla - tlalnepantla,3
+103,estado de mexico - estado de mexico,tlalnepantla - san martin obispo,85
+103,estado de mexico - estado de mexico,ecatepec de morelos - ecatepec de morelos,5
+103,estado de mexico - estado de mexico,ecatepec de morelos - tlalnepantla de baz,15
+103,estado de mexico - estado de mexico,ixtapaluca - tlalnepantla,41
+103,estado de mexico - estado de mexico,san nicolas tolentino - teoloyucan,60
+103,estado de mexico - estado de mexico,tlalnepantla de baz - chalco de diaz covarrubias,39
+103,estado de mexico - estado de mexico,tlalnepantla de baz - cuautitlan izcalli,12
+103,estado de mexico - estado de mexico,tlalnepantla de baz - toluca,57
+103,estado de mexico - estado de mexico,cuautitlan izcalli - tlalnepantla de baz,8
+103,estado de mexico - estado de mexico,tlalnepantla de baz - cuautitlan,13
+103,estado de mexico - estado de mexico,tlalnepantla de baz - tultitlan de mariano escobedo,9
+104,north carolina - jalisco,roxboro - zapopan,2172
+104,north carolina - jalisco,roxboro - la venta del astillero,2187
+104,north carolina - jalisco,maiden - tepatitlan de morelos,1982
+105,chihuahua - texas,hidalgo del parral - el paso,471
+105,chihuahua - texas,hidalgo del parral - houston,1129
+105,chihuahua - texas,ciudad juarez - houston,745
+105,chihuahua - texas,chihuahua - el paso,241
+105,chihuahua - texas,chihuahua - dallas,857
+105,chihuahua - texas,chihuahua - hutchins,860
+105,chihuahua - texas,hidalgo del parral - cedar hill,1043
+105,chihuahua - texas,hidalgo del parral - dallas,1042
+105,chihuahua - texas,chihuahua - donna,2430
+106,nuevo leon - manitoba,san nicolas de los garza - winnipeg,1941
+107,arkansas - texas,brinkley - laredo,808
+107,arkansas - texas,north little rock - laredo,747
+107,arkansas - texas,little rock - laredo,743
+107,arkansas - texas,rogers - sealy,624
+107,arkansas - texas,springdale - sealy,620
+107,arkansas - texas,bentonville - sealy,626
+107,arkansas - texas,hope - new braunfels,450
+107,arkansas - texas,fayetteville - sealy,614
+107,arkansas - texas,newport - new braunfels,649
+108,guanajuato - estado de mexico,celaya - tepotzotlan,142
+108,guanajuato - estado de mexico,celaya - san martin obispo (san pedro),178
+108,guanajuato - estado de mexico,celaya - tealoyucan,141
+108,guanajuato - estado de mexico,celaya - cuautitlan izcalli,147
+108,guanajuato - estado de mexico,celaya - ciudad de mexico,155
+108,guanajuato - estado de mexico,celaya - toluca de lerdo,145
+108,guanajuato - estado de mexico,celaya - lerma de villada,161
+108,guanajuato - estado de mexico,parque industrial pilba - cuautitlan izcalli,213
+108,guanajuato - estado de mexico,celaya - chalco de diaz covarrubias,192
+108,guanajuato - estado de mexico,parque industrial pilba - tepotzotlan,205
+108,guanajuato - estado de mexico,celaya - san mateo atenco,154
+108,guanajuato - estado de mexico,celaya - ojo de agua,157
+109,nuevo leon - new york,san nicolas de los garza - west henrietta,2066
+109,nuevo leon - new york,san nicolas de los garza - schenectady,2276
+109,nuevo leon - new york,san nicolas de los garza - buffalo,2029
+109,nuevo leon - new york,san nicolas de los garza - scotia,2334
+110,guanajuato - virginia,celaya - buena vista,1121
+110,guanajuato - virginia,celaya - winchester,1922
+110,guanajuato - virginia,apaseo el grande - buena vista,2174
+111,ohio - coahuila de zaragoza,orwell - arteaga,2556
+112,nuevo leon - jalisco,ciudad apodaca - tlajomulco de zuniga,531
+112,nuevo leon - jalisco,ciudad apodaca - guadalajara,513
+112,nuevo leon - jalisco,ciudad apodaca - san pedro tlaquepaque,517
+112,nuevo leon - jalisco,ciudad apodaca - la tijera,523
+112,nuevo leon - jalisco,ciudad apodaca - tlaquepaque,510
+112,nuevo leon - jalisco,ciudad apodaca - la alameda,522
+112,nuevo leon - jalisco,ciudad apodaca - el salto,503
+112,nuevo leon - jalisco,ciudad apodaca - tonala,505
+112,nuevo leon - jalisco,ciudad apodaca - parque industrial centro logistico de jalisco,549
+112,nuevo leon - jalisco,nuevo leon - tlajomulco de zuniga,530
+112,nuevo leon - jalisco,nuevo leon - guadalajara,517
+112,nuevo leon - jalisco,nuevo leon - acatlan de juarez,542
+112,nuevo leon - jalisco,ciudad apodaca - zapopan,521
+113,estado de mexico - ciudad de mexico,tlalnepantla de baz - ciudad de mexico,14
+113,estado de mexico - ciudad de mexico,ecatepec de morelos - ciudad de mexico,17
+113,estado de mexico - ciudad de mexico,tepotzotlan - ciudad de mexico,24
+113,estado de mexico - ciudad de mexico,cuautitlan izcalli - ciudad de mexico,25
+114,texas - quebec,laredo - granby,1979
+114,texas - quebec,laredo - montreal,2178
+114,texas - quebec,laredo - pointe-claire,2177
+114,texas - quebec,laredo - baie-d'urfe,2252
+114,texas - quebec,laredo - saint-louis-du-ha! ha!,2491
+114,texas - quebec,laredo - quebec city,2337
+115,estado de mexico - jalisco,cuautitlan izcalli - tlajomulco,327
+115,estado de mexico - jalisco,cuautitlan izcalli - el salto,328
+115,estado de mexico - jalisco,cuautitlan izcalli - tlajomulco de zuniga,333
+115,estado de mexico - jalisco,cuautitlan izcalli - tonala,315
+115,estado de mexico - jalisco,cuautitlan izcalli - san pedro tlaquepaque,324
+115,estado de mexico - jalisco,ciudad lopez mateos - tlajomulco de zuniga,351
+115,estado de mexico - jalisco,cuautitlan izcalli - guadalajara,322
+115,estado de mexico - jalisco,ciudad lopez mateos - san pedro tlaquepaque,330
+115,estado de mexico - jalisco,ciudad lopez mateos - tototlan,288
+115,estado de mexico - jalisco,ciudad lopez mateos - tonala,318
+115,estado de mexico - jalisco,tlalnepantla de baz - el salto,333
+115,estado de mexico - jalisco,san mateo xoloc - la alameda,322
+115,estado de mexico - jalisco,cuautitlan izcalli - zapopan,341
+115,estado de mexico - jalisco,tepotzotlan - el salto,322
+115,estado de mexico - jalisco,tepotzotlan - la alameda,319
+115,estado de mexico - jalisco,tepotzotlan - zapopan,337
+116,texas - guanajuato,laredo - san francisco del rincon,593
+116,texas - guanajuato,laredo - leon,587
+116,texas - guanajuato,laredo - leon de los aldama,568
+116,texas - guanajuato,laredo - parque industrial pilba,570
+116,texas - guanajuato,laredo - guanajuato,617
+117,maryland - texas,baltimore - laredo,1803
+118,nuevo leon - illinois,san nicolas de los garza - alsip,1654
+118,nuevo leon - illinois,san nicolas de los garza - south holland,1666
+118,nuevo leon - illinois,san nicolas de los garza - northlake,1640
+118,nuevo leon - illinois,ciudad apodaca - alsip,1666
+118,nuevo leon - illinois,guadalupe - peoria,1404
+118,nuevo leon - illinois,san nicolas de los garza - st. charles,1643
+118,nuevo leon - illinois,san nicolas de los garza - bolingbrook,1615
+118,nuevo leon - illinois,ciudad apodaca - east moline,1493
+119,nuevo leon - oklahoma,garcia - oklahoma city,818
+119,nuevo leon - oklahoma,ciudad apodaca - oklahoma city,761
+119,nuevo leon - oklahoma,monterrey - lawton,712
+119,nuevo leon - oklahoma,san nicolas de los garza - lawton,678
+120,new york - texas,akron - laredo,1899
+120,new york - texas,dunkirk - laredo,1753
+120,new york - texas,pulaski - laredo,2112
+120,new york - texas,new york - laredo,1986
+121,estado de mexico - guanajuato,ex-hacienda san jose la teja - leon,200
+121,estado de mexico - guanajuato,cuautitlan izcalli - celaya,143
+121,estado de mexico - guanajuato,cuautitlan izcalli - abasolo,197
+121,estado de mexico - guanajuato,cuautitlan izcalli - silao,196
+121,estado de mexico - guanajuato,san jose guadalupe - irapuato,188
+121,estado de mexico - guanajuato,tlalnepantla de baz - leon,211
+121,estado de mexico - guanajuato,san jose guadalupe - leon,224
+121,estado de mexico - guanajuato,cuautitlan izcalli - cortazar,153
+121,estado de mexico - guanajuato,cuautitlan izcalli - leon,217
+121,estado de mexico - guanajuato,san nicolas tolentino - abasolo,207
+121,estado de mexico - guanajuato,cuautitlan izcalli - parque industrial pilba,209
+121,estado de mexico - guanajuato,tepotzotlan - parque industrial pilba,205
+121,estado de mexico - guanajuato,san nicolas tolentino - leon,233
+121,estado de mexico - guanajuato,toluca de lerdo - leon,228
+121,estado de mexico - guanajuato,tlalnepantla - parque industrial pilba,216
+121,estado de mexico - guanajuato,toluca de lerdo - abasolo,205
+122,coahuila de zaragoza - north carolina,arteaga - goldsboro,1861
+123,jalisco - estado de mexico,guadalajara - cuautitlan izcalli,321
+123,jalisco - estado de mexico,guadalajara - ciudad de mexico,338
+123,jalisco - estado de mexico,guadalajara - chalco de diaz covarrubias,366
+123,jalisco - estado de mexico,guadalajara - buenavista,325
+123,jalisco - estado de mexico,san jose del castillo - la paz,354
+123,jalisco - estado de mexico,guadalajara - tealoyucan,317
+123,jalisco - estado de mexico,guadalajara - texcoco,355
+123,jalisco - estado de mexico,el arenal - tultitlan de mariano escobedo,374
+123,jalisco - estado de mexico,guadalajara - tultitlan de mariano escobedo,333
+123,jalisco - estado de mexico,guadalajara - iztapalapa,339
+123,jalisco - estado de mexico,guadalajara - valle de chalco solidaridad,358
+123,jalisco - estado de mexico,tlajomulco de zuniga - jilotepec de molina enriquez,303
+123,jalisco - estado de mexico,guadalajara - santa maria tulantongo,342
+123,jalisco - estado de mexico,guadalajara - colonia lazaro cardenas,326
+123,jalisco - estado de mexico,guadalajara - ecatepec de morelos,336
+123,jalisco - estado de mexico,el salto - los reyes acaquilpan,357
+124,missouri - queretaro,kansas city - el pueblito,1544
+125,jalisco - ciudad de mexico,el salto - ciudad de mexico,334
+125,jalisco - ciudad de mexico,san jose del castillo - ciudad de mexico,341
+125,jalisco - ciudad de mexico,tlajomulco de zuniga - ciudad de mexico,353
+125,jalisco - ciudad de mexico,zapopan - ciudad de mexico,343
+126,wisconsin - guanajuato,marinette - irapuato,2185
+127,jalisco - nuevo leon,acatlan de juarez - guadalupe,542
+127,jalisco - nuevo leon,zapote del valle - guadalupe,514
+127,jalisco - nuevo leon,san pedro tlaquepaque - guadalupe,515
+127,jalisco - nuevo leon,tlajomulco de zuniga - cienega de flores,533
+128,ciudad de mexico - nuevo leon,ciudad de mexico - garcia,562
+128,ciudad de mexico - nuevo leon,ciudad de mexico - cienega de flores,567
+128,ciudad de mexico - nuevo leon,ciudad de mexico - san nicolas de los garza,577
+128,ciudad de mexico - nuevo leon,ciudad de mexico - monterrey,561
+129,indiana - florida,evansville - winter haven,873
+129,indiana - florida,columbus - brooksville,903
+129,indiana - florida,haubstadt - winter haven,877
+130,illinois - tennessee,jacksonville - midway,635
+130,illinois - tennessee,peoria - midway,594
+131,estado de mexico - queretaro,san nicolas tolentino - la palma,108
+131,estado de mexico - queretaro,cuautitlan izcalli - santiago de queretaro,112
+131,estado de mexico - queretaro,buenavista - santa rosa jauregui,126
+131,estado de mexico - queretaro,lerma de villada - la estancia,108
+131,estado de mexico - queretaro,cuautitlan izcalli - parque industrial tecnologico innovacion,110
+131,estado de mexico - queretaro,tepotzotlan - parque industrial tecnologico innovacion,100
+132,louisiana - estado de mexico,dequincy - buenavista,1111
+132,louisiana - estado de mexico,dequincy - tlalnepantla de baz,1165
+133,pennsylvania - texas,meridian - laredo,1678
+133,pennsylvania - texas,valencia - laredo,1667
+133,pennsylvania - texas,zelienople - laredo,1776
+133,pennsylvania - texas,philadelphia - new braunfels,1745
+134,new jersey - indiana,bridgeton - gas city,689
+134,new jersey - indiana,robbinsville twp - seymour,683
+135,alabama - jalisco,monroeville - la venta del astillero,1543
+136,san luis potosi - oklahoma,san luis potosi - oklahoma city,1094
+137,yucatan - veracruz,merida - orizaba,737
+138,texas - san luis potosi,laredo - san luis potosi,478
+139,missouri - illinois,jefferson city - oswego,379
+139,missouri - illinois,fulton - oswego,344
+139,missouri - illinois,west plains - batavia,474
+139,missouri - illinois,hazelwood - olney,155
+140,guanajuato - guanajuato,leon - leon,8
+141,louisiana - texas,shreveport - sealy,309
+142,ontario - texas,aurora - laredo,1929
+143,california - hidalgo,ontario - villa de tezontepec,2157
+144,north carolina - mississippi,burlington - madison,752
+145,mississippi - nuevo leon,tupelo - guadalupe,1142
+146,chihuahua - arizona,ciudad juarez - mesa,443
+147,durango - arizona,durango - mesa,1097
+148,durango - tamaulipas,gomez palacio - nuevo laredo,352
+148,durango - tamaulipas,durango - nuevo laredo,500
+149,mexico - estado de mexico,cuautitlan izcalli - san miguel coatlinchan,43
+150,georgia - pennsylvania,lithia springs - pittston,864
+151,mississippi - texas,southaven - laredo,889
+151,mississippi - texas,madison - laredo,805
+152,georgia - florida,lithia springs - lakeland,488
+152,georgia - florida,palmetto - fort pierce,549
+152,georgia - florida,fairburn - fort pierce,549
+152,georgia - florida,atlanta - fort pierce,549
+152,georgia - florida,port wentworth - alachua,245
+152,georgia - florida,barnesville - fort pierce,494
+152,georgia - florida,savannah - alachua,241
+152,georgia - florida,locust grove - fort pierce,513
+153,nuevo leon - wisconsin,ciudad apodaca - menomonee falls,1607
+153,nuevo leon - wisconsin,san nicolas de los garza - superior,1695
+154,texas - puebla,pasadena - puebla,1149
+154,texas - puebla,laredo - puebla,786
+154,texas - puebla,laredo - heroica puebla de zaragoza,778
+155,south carolina - florida,clinton - fort pierce,572
+156,iowa - wisconsin,davenport - menomonie,364
+156,iowa - wisconsin,davenport - beaver dam,230
+156,iowa - wisconsin,council bluffs - beaver dam,473
+157,new jersey - pennsylvania,edison - tannersville,93
+157,new jersey - pennsylvania,hightstown - tannersville,113
+157,new jersey - pennsylvania,robbinsville township - tannersville,120
+157,new jersey - pennsylvania,east brunswick - tannersville,101
+157,new jersey - pennsylvania,monroe township - tannersville,106
+157,new jersey - pennsylvania,sayreville - tannersville,98
+157,new jersey - pennsylvania,south brunswick township - tannersville,106
+157,new jersey - pennsylvania,piscataway - tannersville,82
+157,new jersey - pennsylvania,robbinsville township - woodland,270
+157,new jersey - pennsylvania,long hill - tannersville,77
+158,mississippi - puebla,columbus - puebla,1727
+159,nuevo leon - new jersey,salinas victoria - moorestown,2189
+159,nuevo leon - new jersey,salinas victoria - north brunswick township,2127
+159,nuevo leon - new jersey,ciudad general escobedo - moorestown,2193
+160,queretaro - georgia,santiago de queretaro - buford,1736
+161,queretaro - ohio,santiago de queretaro - groveport,2168
+161,queretaro - ohio,santiago de queretaro - richfield,2270
+162,queretaro - pennsylvania,santiago de queretaro - tobyhanna,2540
+162,queretaro - pennsylvania,santiago de queretaro - shippensburg,2329
