@@ -1,122 +1,278 @@
-from processing import ProcessingData
-
-from sklearn.svm import SVR
-from sklearn.linear_model import RANSACRegressor, LinearRegression
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
-from sklearn.model_selection import train_test_split, GridSearchCV
-
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, BatchNormalization, Dropout
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.callbacks import EarlyStopping
-
+from typing import Dict, List, Tuple, Union, Any, Optional
+from pathlib import Path
 import numpy as np
 import pandas as pd
 import joblib
 import os
-
 import warnings
+import logging
+from dataclasses import dataclass
+from sklearn.svm import SVR
+from sklearn.linear_model import RANSACRegressor, LinearRegression
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.model_selection import train_test_split, GridSearchCV
+from tensorflow.keras.models import Sequential, Model, load_model
+from tensorflow.keras.layers import LSTM, Dense, BatchNormalization, Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
+from processing import ProcessingData
+
+# Configurar logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
 warnings.simplefilter(action='ignore', category=RuntimeWarning)
 
-class TrainModels():
-    def __init__(self, broker_id):
-        self.broker_id = broker_id
-        self._create_folders()
-        processing = ProcessingData(broker_id)
-        self.data = processing.get_data()
-        self.df_distances = self._avg_distances(self.data)
-        self.train_data = self._normalize_data(self.data)
+@dataclass
+class ModelConfig:
+    """Configuración para los modelos de entrenamiento."""
+    batch_size: int = 32
+    epochs: int = 200
+    early_stopping_patience: int = 15
+    early_stopping_delta: float = 0.0001
+    early_stopping_baseline: float = 0.003
+    test_size: float = 0.1
+    random_state: int = 42
+    distance_threshold: int = 60
+    learning_rate: float = 0.01
+    lstm_units: int = 50
+    dropout_rate: float = 0.2
+    min_samples_per_route: int = 10
+    validation_split: float = 0.2
+    max_models_per_route: int = 4
+
+class TrainModels:
+    """
+    Clase para entrenar diferentes modelos de machine learning para predicción de precios.
     
-    def _create_folders(self):
-        print('Creating folders...')
-        #main folder
-        if not os.path.exists(f'output_data/{self.broker_id}/'):
-            os.makedirs(f'output_data/{self.broker_id}/')
+    Esta clase maneja el entrenamiento de:
+    - Modelos por ruta (SVR, Linear Regression, RNN)
+    - Modelos por distancia (corta/larga)
+    - Preprocesamiento y normalización de datos
+    """
+    
+    def __init__(self, broker_id: str, config: Optional[ModelConfig] = None):
+        """
+        Inicializa la clase TrainModels.
+
+        Args:
+            broker_id: ID del broker
+            config: Configuración para los modelos
+        """
+        self.broker_id = str(broker_id)
+        self.config = config or ModelConfig()
+        self.output_dir = Path(f'output_data/{self.broker_id}')
+        self.models_dir = self.output_dir / 'models'
+        self.checkpoints_dir = self.output_dir / 'checkpoints'
         
-        # models route folders
-        if not os.path.exists(f'output_data/{self.broker_id}/models_s2s/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_s2s/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_s2s/lr_models/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_s2s/lr_models/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_s2s/svr_models/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_s2s/svr_models/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_s2s/rnn_models/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_s2s/rnn_models/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_s2s/rnn_models/models/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_s2s/rnn_models/models/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_s2s/rnn_models/scalers/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_s2s/rnn_models/scalers/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_s2s/new_models/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_s2s/new_models/')
-        
-        #distance models
-        if not os.path.exists(f'output_data/{self.broker_id}/models_distance/lr_models/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_distance/lr_models/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_distance/svr_models/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_distance/svr_models/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_distance/rnn_models/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_distance/rnn_models/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_distance/rnn_models/models/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_distance/rnn_models/models/')
-        
-        if not os.path.exists(f'output_data/{self.broker_id}/models_distance/rnn_models/scalers/'):
-            os.makedirs(f'output_data/{self.broker_id}/models_distance/rnn_models/scalers/')
+        try:
+            self._create_folders()
+            processing = ProcessingData(broker_id)
+            self.data = processing.get_data()
             
-    
-    def _avg_distances(self, data):
-        unique_routes = data['c2c_route'].unique()
+            if self.data.empty:
+                raise ValueError("No hay datos disponibles para entrenar")
+                
+            self.df_distances = self._avg_distances(self.data)
+            self.train_data = self._normalize_data(self.data)
+            
+            # Validar datos
+            self._validate_data()
+            
+        except Exception as e:
+            logger.error(f"Error al inicializar TrainModels: {str(e)}")
+            raise
 
-        s2s_id = []
-        s2s_route = []
-        c2c_route = []
-        distance = []
-
-        for route in unique_routes:
-            if str(route) != 'nan':
-                df_temp = data[data['c2c_route'] == route]
-                s2s_id.append(df_temp['s2s_id'].values[0])
-                s2s_route.append(df_temp['s2s_route'].values[0])
-                c2c_route.append(df_temp['c2c_route'].values[0])
-                distance.append(int(df_temp['distance'].mean()))
+    def _validate_data(self) -> None:
+        """Valida los datos de entrada."""
+        required_columns = ['distance', 'month', 'adjust_price_usd', 's2s_id', 's2s_route']
+        missing_columns = [col for col in required_columns if col not in self.data.columns]
         
-        df_result = pd.DataFrame({
-            's2s_id': s2s_id,
-            's2s_route': s2s_route,
-            'c2c_route': c2c_route,
-            'distance': distance
-        })
+        if missing_columns:
+            raise ValueError(f"Faltan columnas requeridas: {missing_columns}")
+            
+        if self.data['distance'].min() <= 0:
+            raise ValueError("Hay distancias menores o iguales a cero")
+            
+        if self.data['adjust_price_usd'].min() <= 0:
+            raise ValueError("Hay precios menores o iguales a cero")
 
-        return df_result
+    def _create_folders(self) -> None:
+        """Crea la estructura de directorios necesaria para los modelos."""
+        folders = [
+            self.output_dir,
+            self.models_dir,
+            self.checkpoints_dir,
+            self.models_dir / 'models_s2s',
+            self.models_dir / 'models_s2s/lr_models',
+            self.models_dir / 'models_s2s/svr_models',
+            self.models_dir / 'models_s2s/rnn_models',
+            self.models_dir / 'models_s2s/rnn_models/models',
+            self.models_dir / 'models_s2s/rnn_models/scalers',
+            self.models_dir / 'models_s2s/new_models',
+            self.models_dir / 'models_distance/lr_models',
+            self.models_dir / 'models_distance/svr_models',
+            self.models_dir / 'models_distance/rnn_models',
+            self.models_dir / 'models_distance/rnn_models/models',
+            self.models_dir / 'models_distance/rnn_models/scalers'
+        ]
+        
+        for folder in folders:
+            folder.mkdir(parents=True, exist_ok=True)
     
-    def _normalize_data(self, data):
+    def _avg_distances(self, data: pd.DataFrame) -> pd.DataFrame:
+        """
+        Calcula las distancias promedio por ruta.
+
+        Args:
+            data: DataFrame con los datos originales
+
+        Returns:
+            pd.DataFrame: DataFrame con las distancias promedio
+        """
+        routes = data['c2c_route'].dropna().unique()
+        
+        result_data = {
+            's2s_id': [],
+            's2s_route': [],
+            'c2c_route': [],
+            'distance': []
+        }
+        
+        for route in routes:
+            df_temp = data[data['c2c_route'] == route]
+            if len(df_temp) >= self.config.min_samples_per_route:
+                result_data['s2s_id'].append(df_temp['s2s_id'].iloc[0])
+                result_data['s2s_route'].append(df_temp['s2s_route'].iloc[0])
+                result_data['c2c_route'].append(route)
+                result_data['distance'].append(int(df_temp['distance'].mean()))
+        
+        return pd.DataFrame(result_data)
+    
+    def _normalize_data(self, data: pd.DataFrame) -> pd.DataFrame:
+        """
+        Normaliza los datos de entrenamiento.
+
+        Args:
+            data: DataFrame con los datos a normalizar
+
+        Returns:
+            pd.DataFrame: DataFrame con los datos normalizados
+        """
         df = data.copy()
         scaler = StandardScaler()
         df[['distance']] = scaler.fit_transform(df[['distance']])
-
-        df = df[['distance','month','adjust_price_usd']]
-        return
+        return df[['distance', 'month', 'adjust_price_usd']]
     
-    def _new_model(self,X,Y):
-        x = X.copy()[['distance','month']]
-        y = Y.copy()
-        lm = RANSACRegressor()     # Linear regression model
-        lm.fit(x, y)
+    def _create_lstm_model(self, input_shape: Tuple[int, int]) -> Model:
+        """
+        Crea la arquitectura del modelo LSTM.
 
-        return lm
+        Args:
+            input_shape: Forma de los datos de entrada
+
+        Returns:
+            Model: Modelo LSTM compilado
+        """
+        model = Sequential([
+            LSTM(self.config.lstm_units, activation='relu', 
+                 input_shape=input_shape, return_sequences=True),
+            BatchNormalization(),
+            LSTM(self.config.lstm_units, activation='relu', return_sequences=False),
+            BatchNormalization(),
+            Dropout(self.config.dropout_rate),
+            Dense(1)
+        ])
         
-    def _svr_train(self, X, Y):
-        x = X.copy()[['distance', 'month']]
-        y = Y.copy()
+        model.compile(
+            optimizer=Adam(learning_rate=self.config.learning_rate),
+            loss='mse',
+            metrics=['mae']
+        )
         
+        return model
+    
+    def _train_rnn(self, X: pd.DataFrame, y: pd.Series, route_id: str) -> Tuple[Model, MinMaxScaler, MinMaxScaler]:
+        """
+        Entrena un modelo RNN.
+
+        Args:
+            X: Features de entrenamiento
+            y: Target de entrenamiento
+            route_id: ID de la ruta para guardar checkpoints
+
+        Returns:
+            Tuple[Model, MinMaxScaler, MinMaxScaler]: Modelo entrenado y scalers
+        """
+        scaler_X = MinMaxScaler()
+        scaler_y = MinMaxScaler()
+        
+        X_scaled = scaler_X.fit_transform(X)
+        y_scaled = scaler_y.fit_transform(y.values.reshape(-1, 1))
+        
+        X_train, X_test, y_train, y_test = train_test_split(
+            X_scaled, y_scaled,
+            test_size=self.config.test_size,
+            random_state=self.config.random_state
+        )
+        
+        X_train = X_train.reshape((X_train.shape[0], 1, X_train.shape[1]))
+        X_test = X_test.reshape((X_test.shape[0], 1, X_test.shape[1]))
+        
+        checkpoint_path = self.checkpoints_dir / f'rnn_checkpoint_{route_id}.h5'
+        
+        callbacks = [
+            EarlyStopping(
+                monitor='val_loss',
+                min_delta=self.config.early_stopping_delta,
+                patience=self.config.early_stopping_patience,
+                verbose=1,
+                mode='min',
+                baseline=self.config.early_stopping_baseline,
+                restore_best_weights=True
+            ),
+            ModelCheckpoint(
+                filepath=str(checkpoint_path),
+                monitor='val_loss',
+                save_best_only=True,
+                verbose=1
+            )
+        ]
+        
+        model = self._create_lstm_model((X_train.shape[1], X_train.shape[2]))
+        
+        try:
+            model.fit(
+                X_train, y_train,
+                epochs=self.config.epochs,
+                batch_size=self.config.batch_size,
+                validation_data=(X_test, y_test),
+                verbose=1,
+                callbacks=callbacks
+            )
+        except Exception as e:
+            logger.error(f"Error entrenando modelo RNN para ruta {route_id}: {str(e)}")
+            if checkpoint_path.exists():
+                model = load_model(str(checkpoint_path))
+            else:
+                raise
+        
+        return model, scaler_X, scaler_y
+    
+    def _train_svr(self, X: pd.DataFrame, y: pd.Series) -> SVR:
+        """
+        Entrena un modelo SVR con búsqueda de hiperparámetros.
+
+        Args:
+            X: Features de entrenamiento
+            y: Target de entrenamiento
+
+        Returns:
+            SVR: Modelo SVR entrenado
+        """
         param_grid = {
             'C': [0.1, 1, 10, 15, 20, 50],
             'gamma': ['scale', 'auto', 0.001, 0.01, 0.1, 1, 10],
@@ -124,272 +280,207 @@ class TrainModels():
         }
         
         svr = SVR(kernel="rbf")
-        grid_search = GridSearchCV(svr, param_grid, cv=5, scoring='neg_mean_squared_error', n_jobs=-1)
-        grid_search.fit(x, y)
+        grid_search = GridSearchCV(
+            svr, param_grid,
+            cv=5,
+            scoring='neg_mean_squared_error',
+            n_jobs=-1,
+            verbose=1
+        )
         
-        best_model = grid_search.best_estimator_
-        print(f"Mejores hiperparámetros: {grid_search.best_params_}")
-        
-        return best_model
+        try:
+            grid_search.fit(X[['distance', 'month']], y)
+            logger.info(f"Mejores hiperparámetros: {grid_search.best_params_}")
+            return grid_search.best_estimator_
+        except Exception as e:
+            logger.error(f"Error en GridSearchCV: {str(e)}")
+            # Fallback a parámetros por defecto
+            svr = SVR(kernel="rbf", C=1.0, gamma='scale', epsilon=0.1)
+            svr.fit(X[['distance', 'month']], y)
+            return svr
     
-    def _lr_train(self,X,Y):
-        x = X.copy()[['distance','month']]
-        y = Y.copy()
-        lm = LinearRegression()     # Linear regression model
-        lm.fit(x, y)
+    def _train_route_models(self) -> Tuple[Dict, Dict, Dict, Dict]:
+        """
+        Entrena modelos para cada ruta.
 
-        return lm
-
-    def _rnn_train(self,X,Y):
-        x = X.copy()[['distance','month','s2s_id']]
-        y = Y.copy()
-
-        scaler_X = MinMaxScaler()
-        scaler_y = MinMaxScaler()
-        X_scaled = scaler_X.fit_transform(x)
-        y_scaled = scaler_y.fit_transform(y.values.reshape(-1, 1))
-
-        X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.1, random_state=42)
-        # Convertir las entradas a un formato adecuado para la RNN
-        X_train = np.array(X_train).reshape((X_train.shape[0], 1, X_train.shape[1]))
-        X_test = np.array(X_test).reshape((X_test.shape[0], 1, X_test.shape[1]))
-
-        early_stopping = EarlyStopping(monitor='val_loss', 
-                                        min_delta=0.0001, 
-                                        patience=15, 
-                                        verbose=1, 
-                                        mode='min', 
-                                        baseline=0.003, 
-                                        restore_best_weights=True)
-
-        model = self._architecture(X_train)
-        # Entrenamiento del modelo con early stopping
-        model.fit(X_train, y_train, 
-                            epochs=200, 
-                            batch_size=32, 
-                            validation_data=(X_test, y_test), 
-                            verbose=1, 
-                            callbacks=[early_stopping])
-        
-        output = (model, scaler_X, scaler_y)
-        return output
-        
-    def _architecture(self,m):
-        model = Sequential()
-        model.add(LSTM(50, activation='relu', input_shape=(m.shape[1], m.shape[2]), return_sequences=True))
-        # Batch normalization para estabilización y acortar tiempos de entrenamiento
-        model.add(BatchNormalization()) 
-        # Segunda capa LSTM con Batch Normalization
-        model.add(LSTM(50, activation='relu', return_sequences=False))
-        model.add(BatchNormalization())
-        # Añadimos dropout para evitar sobreajustes
-        model.add(Dropout(0.2))
-        # Capa totalmente conectada
-        model.add(Dense(1))
-        # Compilamos el modelo
-        model.compile(optimizer=Adam(learning_rate=0.01), loss='mse')
-        return model
-
-    def _train_route_models(self):
+        Returns:
+            Tuple[Dict, Dict, Dict, Dict]: Modelos entrenados (svr, lr, rnn, new)
+        """
         routes = self.data['s2s_id'].unique()
         self.routes_id = routes
-        self.routes = [self.data.loc[self.data['s2s_id'] == route, 's2s_route'].iloc[0] for route in self.routes_id]
-
-        rnn_models = {}
-        svr_models = {}
-        lr_models = {}
-        new_models = {}
+        self.routes = [
+            self.data.loc[self.data['s2s_id'] == route, 's2s_route'].iloc[0]
+            for route in routes
+        ]
+        
+        models = {
+            'svr': {},
+            'lr': {},
+            'rnn': {},
+            'new': {}
+        }
         
         for route in routes:
-            print('-----------------------------------\n')
-            print(f'Training route: {route}')
-            print('\n-----------------------------------')
-            df_route = self.data[self.data['s2s_id'] == route]
-            X = df_route[['distance','month','s2s_id']]
-            Y = df_route['adjust_price_usd']
-
-            svr_models[route] = self._svr_train(X,Y)
-            lr_models[route] = self._lr_train(X,Y)
-            rnn_models[route] = self._rnn_train(X,Y)
-            new_models[route] = self._new_model(X,Y)
+            try:
+                logger.info(f'\nTraining route: {route}')
+                df_route = self.data[self.data['s2s_id'] == route]
+                
+                if len(df_route) < self.config.min_samples_per_route:
+                    logger.warning(f"Ruta {route} tiene muy pocos registros, saltando...")
+                    continue
+                    
+                X = df_route[['distance', 'month', 's2s_id']]
+                y = df_route['adjust_price_usd']
+                
+                models['svr'][route] = self._train_svr(X, y)
+                models['lr'][route] = LinearRegression().fit(X[['distance', 'month']], y)
+                models['rnn'][route] = self._train_rnn(X, y, str(route))
+                models['new'][route] = RANSACRegressor().fit(X[['distance', 'month']], y)
+                
+            except Exception as e:
+                logger.error(f"Error entrenando modelos para ruta {route}: {str(e)}")
+                continue
         
-        return svr_models, lr_models, rnn_models, new_models
+        return models['svr'], models['lr'], models['rnn'], models['new']
     
-    def _svr_distance_train(self, X, Y):
-        x = X.copy()[['distance','month']]
-        y = Y.copy()
-        sigma = 31.23318
-        gamma_value = 1 / (2 * sigma ** 2)
-        svr = SVR(kernel="rbf", C=15, gamma=gamma_value,epsilon=0.1)          # SVM model
-        svr.fit(x, y)
+    def _train_distance_models(self) -> Tuple[Dict, Dict, Dict]:
+        """
+        Entrena modelos basados en distancia.
 
-        return svr
-    
-    def _lr_distance_train(self,X,Y):
-        x = X.copy()[['distance','month']]
-        y = Y.copy()
-        lm = RANSACRegressor()     # Linear regression model
-        lm.fit(x, y)
-
-        return lm
-    
-    def _rnn_distance_train(self,X,Y):
-        x = X.copy()[['distance','month']]
-        y = Y.copy()
-
-        scaler_X = MinMaxScaler()
-        scaler_y = MinMaxScaler()
-        X_scaled = scaler_X.fit_transform(x)
-        y_scaled = scaler_y.fit_transform(y.values.reshape(-1, 1))
-
-        X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.1, random_state=42)
-        # Convertir las entradas a un formato adecuado para la RNN
-        X_train = np.array(X_train).reshape((X_train.shape[0], 1, X_train.shape[1]))
-        X_test = np.array(X_test).reshape((X_test.shape[0], 1, X_test.shape[1]))
-
-        early_stopping = EarlyStopping(monitor='val_loss', 
-                                        min_delta=0.0001, 
-                                        patience=15, 
-                                        verbose=1, 
-                                        mode='min', 
-                                        baseline=0.003, 
-                                        restore_best_weights=True)
-
-        model = self._architecture(X_train)
-        # Entrenamiento del modelo con early stopping
-        model.fit(X_train, y_train, 
-                            epochs=200, 
-                            batch_size=32, 
-                            validation_data=(X_test, y_test), 
-                            verbose=1, 
-                            callbacks=[early_stopping])
+        Returns:
+            Tuple[Dict, Dict, Dict]: Modelos entrenados (svr, lr, rnn)
+        """
+        data_short = self.data[self.data['distance'] <= self.config.distance_threshold]
+        data_long = self.data[self.data['distance'] > self.config.distance_threshold]
         
-        output = (model, scaler_X, scaler_y)
-        return output
-    
-    def _train_distance_models(self):
-        distance_thres = 60
-
-        data1 = self.data[self.data['distance'] <= distance_thres]
-        data2 = self.data[self.data['distance'] > distance_thres]
-
-        svr_models = {}
-        lr_models = {}
-        rnn_models = {}
-
-        data = [data1, data2]
-        labels = ['short', 'long']
-
-        for i in range(2):
-            print('-----------------------------------\n')
-            print(f'Training distance model: {labels[i]}')
-            print('\n-----------------------------------')
-            df_route = data[i]
-            X = df_route[['distance','month']]
-            Y = df_route['adjust_price_usd']
-
-            svr_models[labels[i]] = self._svr_distance_train(X,Y)
-            lr_models[labels[i]] = self._lr_distance_train(X,Y)
-            rnn_models[labels[i]] = self._rnn_distance_train(X,Y)
-
-        return svr_models, lr_models, rnn_models
-        #return lr_models
-    
-    def get_distance_models(self):
-        svr_models, lr_models, rnn_models = self._train_distance_models()
-        svr_files = []
-        lr_files = []
-        rnn_files = []
-        scalerx_files = []
-        scalery_files = []
-
-        for route, model in lr_models.items():
-            name =f"lr_model_{route}.pkl"
-            joblib.dump(model, f'output_data/{self.broker_id}/models_distance/lr_models/{name}')
-            lr_files.append(name)
-        
-        for route, model in svr_models.items():
-            name = f"svr_model_{route}.pkl"
-            joblib.dump(model, f'output_data/{self.broker_id}/models_distance/svr_models/{name}')
-            svr_files.append(name)
-        
-        for route, model in rnn_models.items():
-            name1 = f"rnn_model_{route}.h5"
-            name2 = f"scaler_X_{route}.pkl"
-            name3 = f"scaler_y_{route}.pkl"
-            model[0].save(f'output_data/{self.broker_id}/models_distance/rnn_models/models/{name1}')
-            joblib.dump(model[1], f'output_data/{self.broker_id}/models_distance/rnn_models/scalers/{name2}')
-            joblib.dump(model[2], f'output_data/{self.broker_id}/models_distance/rnn_models/scalers/{name3}')
-            rnn_files.append(name1)
-            scalerx_files.append(name2)
-            scalery_files.append(name3)
-
-        paths = {
-            'models': ['short', 'long'],
-            'lr_models': lr_files,
-            'svr_models': svr_files,
-            'rnn_models': rnn_files,
-            'scaler_X': scalerx_files,
-            'scaler_y': scalery_files
+        models = {
+            'svr': {},
+            'lr': {},
+            'rnn': {}
         }
-
-        df = pd.DataFrame(paths)
-        df.to_csv('output_data/0/paths_distance_models.csv', index=False)
-
-    def get_models(self):
-        svr_models, lr_models, rnn_models, new_models = self._train_route_models()
-        svr_files = []
-        lr_files = []
-        rnn_files = []
-        new_files = []
-        scalerx_files = []
-        scalery_files = []
-
-        for route, model in lr_models.items():
-            name = f"lr_model_{route}.pkl"
-            joblib.dump(model, f'output_data/{self.broker_id}/models_s2s/lr_models/{name}')
-            lr_files.append(name)
         
-        for route, model in svr_models.items():
-            name = f"svr_model_{route}.pkl"
-            joblib.dump(model, f'output_data/{self.broker_id}/models_s2s/svr_models/{name}')
-            svr_files.append(name)
+        for label, data in [('short', data_short), ('long', data_long)]:
+            try:
+                logger.info(f'\nTraining distance model: {label}')
+                if len(data) < self.config.min_samples_per_route:
+                    logger.warning(f"Modelo {label} tiene muy pocos registros, saltando...")
+                    continue
+                    
+                X = data[['distance', 'month']]
+                y = data['adjust_price_usd']
+                
+                models['svr'][label] = self._train_svr(X, y)
+                models['lr'][label] = RANSACRegressor().fit(X, y)
+                models['rnn'][label] = self._train_rnn(X, y, f"distance_{label}")
+                
+            except Exception as e:
+                logger.error(f"Error entrenando modelo de distancia {label}: {str(e)}")
+                continue
         
-        for route, model in rnn_models.items():
-            name1 = f"rnn_model_{route}.h5"
-            name2 = f"scaler_X_{route}.pkl"
-            name3 = f"scaler_y_{route}.pkl"
-            model[0].save(f'output_data/{self.broker_id}/models_s2s/rnn_models/models/{name1}')
-            joblib.dump(model[1], f'output_data/{self.broker_id}/models_s2s/rnn_models/scalers/{name2}')
-            joblib.dump(model[2], f'output_data/{self.broker_id}/models_s2s/rnn_models/scalers/{name3}')
-            rnn_files.append(name1)
-            scalerx_files.append(name2)
-            scalery_files.append(name3)
+        return models['svr'], models['lr'], models['rnn']
+    
+    def _save_models(self, models: Dict, model_type: str, is_distance: bool = False) -> List[str]:
+        """
+        Guarda los modelos entrenados.
 
-        for route, model in new_models.items():
-            name = f"new_model_{route}.pkl"
-            joblib.dump(model, f'output_data/{self.broker_id}/models_s2s/new_models/{name}')
-            new_files.append(name)
+        Args:
+            models: Diccionario de modelos a guardar
+            model_type: Tipo de modelo ('svr', 'lr', 'rnn', 'new')
+            is_distance: Si los modelos son basados en distancia
 
-        paths = {
-            's2s_id': self.routes_id,
-            's2s_route': self.routes,
-            'lr_models': lr_files,
-            'svr_models': svr_files,
-            'rnn_models': rnn_files,
-            'scaler_X': scalerx_files,
-            'scaler_y': scalery_files,
-            'new_models': new_files
-        }
-
-        df = pd.DataFrame(paths)
-        df.to_csv('output_data/0/paths_routes_models.csv', index=False)
+        Returns:
+            List[str]: Rutas de los archivos guardados
+        """
+        base_path = self.models_dir / ('models_distance' if is_distance else 'models_s2s')
+        saved_files = []
         
+        for key, model in models.items():
+            try:
+                if model_type == 'rnn':
+                    model_path = base_path / f'rnn_models/models/rnn_model_{key}.h5'
+                    scaler_x_path = base_path / f'rnn_models/scalers/scaler_X_{key}.pkl'
+                    scaler_y_path = base_path / f'rnn_models/scalers/scaler_y_{key}.pkl'
+                    
+                    model[0].save(str(model_path))
+                    joblib.dump(model[1], str(scaler_x_path))
+                    joblib.dump(model[2], str(scaler_y_path))
+                    
+                    saved_files.extend([
+                        f'rnn_model_{key}.h5',
+                        f'scaler_X_{key}.pkl',
+                        f'scaler_y_{key}.pkl'
+                    ])
+                else:
+                    model_path = base_path / f'{model_type}_models/{model_type}_model_{key}.pkl'
+                    joblib.dump(model, str(model_path))
+                    saved_files.append(f'{model_type}_model_{key}.pkl')
+                    
+            except Exception as e:
+                logger.error(f"Error guardando modelo {model_type} para {key}: {str(e)}")
+                continue
         
+        return saved_files
+    
+    def get_distance_models(self) -> None:
+        """Entrena y guarda los modelos basados en distancia."""
+        try:
+            svr_models, lr_models, rnn_models = self._train_distance_models()
+            
+            saved_files = {
+                'models': ['short', 'long'],
+                'lr_models': self._save_models(lr_models, 'lr', True),
+                'svr_models': self._save_models(svr_models, 'svr', True),
+                'rnn_models': self._save_models(rnn_models, 'rnn', True)
+            }
+            
+            pd.DataFrame(saved_files).to_csv(
+                self.output_dir / 'paths_distance_models.csv',
+                index=False
+            )
+            
+        except Exception as e:
+            logger.error(f"Error en get_distance_models: {str(e)}")
+            raise
+    
+    def get_models(self) -> None:
+        """Entrena y guarda los modelos por ruta."""
+        try:
+            svr_models, lr_models, rnn_models, new_models = self._train_route_models()
+            
+            saved_files = {
+                's2s_id': self.routes_id,
+                's2s_route': self.routes,
+                'lr_models': self._save_models(lr_models, 'lr'),
+                'svr_models': self._save_models(svr_models, 'svr'),
+                'rnn_models': self._save_models(rnn_models, 'rnn'),
+                'new_models': self._save_models(new_models, 'new')
+            }
+            
+            pd.DataFrame(saved_files).to_csv(
+                self.output_dir / 'paths_routes_models.csv',
+                index=False
+            )
+            
+        except Exception as e:
+            logger.error(f"Error en get_models: {str(e)}")
+            raise
+
 if __name__ == '__main__':
-    broker_id = 0
-    tm = TrainModels(broker_id)
-    distances = tm.df_distances
-    distances.to_csv(f'output_data/{broker_id}/distances.csv', index=False)
-    #tm.get_models()
-    #tm.get_distance_models()
+    try:
+        broker_id = '0'
+        config = ModelConfig()
+        tm = TrainModels(broker_id, config)
+        
+        # Guardar distancias
+        tm.df_distances.to_csv(
+            tm.output_dir / 'distances.csv',
+            index=False
+        )
+        
+        # Entrenar modelos
+        # tm.get_models()
+        # tm.get_distance_models()
+        
+    except Exception as e:
+        logger.error(f"Error en el programa principal: {str(e)}")
+        raise
