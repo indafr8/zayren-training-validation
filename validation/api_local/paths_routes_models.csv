@@ -1,164 +1,164 @@
-s2s_id,s2s_route,lr_models,svr_models,rnn_models,scaler_X,scaler_y,new_models
-0,texas - texas,lr_model_0.pkl,svr_model_0.pkl,rnn_model_0.h5,scaler_X_0.pkl,scaler_y_0.pkl,new_model_0.pkl
-1,hidalgo - tamaulipas,lr_model_1.pkl,svr_model_1.pkl,rnn_model_1.h5,scaler_X_1.pkl,scaler_y_1.pkl,new_model_1.pkl
-2,estado de mexico - tamaulipas,lr_model_2.pkl,svr_model_2.pkl,rnn_model_2.h5,scaler_X_2.pkl,scaler_y_2.pkl,new_model_2.pkl
-3,baja california - california,lr_model_3.pkl,svr_model_3.pkl,rnn_model_3.h5,scaler_X_3.pkl,scaler_y_3.pkl,new_model_3.pkl
-4,tamaulipas - texas,lr_model_4.pkl,svr_model_4.pkl,rnn_model_4.h5,scaler_X_4.pkl,scaler_y_4.pkl,new_model_4.pkl
-5,texas - kentucky,lr_model_5.pkl,svr_model_5.pkl,rnn_model_5.h5,scaler_X_5.pkl,scaler_y_5.pkl,new_model_5.pkl
-6,yucatan - tamaulipas,lr_model_6.pkl,svr_model_6.pkl,rnn_model_6.h5,scaler_X_6.pkl,scaler_y_6.pkl,new_model_6.pkl
-7,baja california - arizona,lr_model_7.pkl,svr_model_7.pkl,rnn_model_7.h5,scaler_X_7.pkl,scaler_y_7.pkl,new_model_7.pkl
-8,north carolina - texas,lr_model_8.pkl,svr_model_8.pkl,rnn_model_8.h5,scaler_X_8.pkl,scaler_y_8.pkl,new_model_8.pkl
-9,ohio - texas,lr_model_9.pkl,svr_model_9.pkl,rnn_model_9.h5,scaler_X_9.pkl,scaler_y_9.pkl,new_model_9.pkl
-10,illinois - texas,lr_model_10.pkl,svr_model_10.pkl,rnn_model_10.h5,scaler_X_10.pkl,scaler_y_10.pkl,new_model_10.pkl
-11,virginia - texas,lr_model_11.pkl,svr_model_11.pkl,rnn_model_11.h5,scaler_X_11.pkl,scaler_y_11.pkl,new_model_11.pkl
-12,guanajuato - tamaulipas,lr_model_12.pkl,svr_model_12.pkl,rnn_model_12.h5,scaler_X_12.pkl,scaler_y_12.pkl,new_model_12.pkl
-13,kentucky - aguascalientes,lr_model_13.pkl,svr_model_13.pkl,rnn_model_13.h5,scaler_X_13.pkl,scaler_y_13.pkl,new_model_13.pkl
-14,texas - tamaulipas,lr_model_14.pkl,svr_model_14.pkl,rnn_model_14.h5,scaler_X_14.pkl,scaler_y_14.pkl,new_model_14.pkl
-15,nuevo leon - mississippi,lr_model_15.pkl,svr_model_15.pkl,rnn_model_15.h5,scaler_X_15.pkl,scaler_y_15.pkl,new_model_15.pkl
-16,nuevo leon - indiana,lr_model_16.pkl,svr_model_16.pkl,rnn_model_16.h5,scaler_X_16.pkl,scaler_y_16.pkl,new_model_16.pkl
-17,texas - florida,lr_model_17.pkl,svr_model_17.pkl,rnn_model_17.h5,scaler_X_17.pkl,scaler_y_17.pkl,new_model_17.pkl
-18,texas - ohio,lr_model_18.pkl,svr_model_18.pkl,rnn_model_18.h5,scaler_X_18.pkl,scaler_y_18.pkl,new_model_18.pkl
-19,texas - indiana,lr_model_19.pkl,svr_model_19.pkl,rnn_model_19.h5,scaler_X_19.pkl,scaler_y_19.pkl,new_model_19.pkl
+s2s_id,s2s_route,lr_models,svr_models,rnn_models,rnn_scaler_x,rnn_scaler_y,new_models
+0,nuevo leon - ohio,lr_model_0.pkl,svr_model_0.pkl,rnn_model_0.h5,scaler_X_0.pkl,scaler_y_0.pkl,new_model_0.pkl
+1,texas - jalisco,lr_model_1.pkl,svr_model_1.pkl,rnn_model_1.h5,scaler_X_1.pkl,scaler_y_1.pkl,new_model_1.pkl
+2,tamaulipas - texas,lr_model_2.pkl,svr_model_2.pkl,rnn_model_2.h5,scaler_X_2.pkl,scaler_y_2.pkl,new_model_2.pkl
+3,nuevo leon - texas,lr_model_3.pkl,svr_model_3.pkl,rnn_model_3.h5,scaler_X_3.pkl,scaler_y_3.pkl,new_model_3.pkl
+4,queretaro - tamaulipas,lr_model_4.pkl,svr_model_4.pkl,rnn_model_4.h5,scaler_X_4.pkl,scaler_y_4.pkl,new_model_4.pkl
+5,texas - tennessee,lr_model_5.pkl,svr_model_5.pkl,rnn_model_5.h5,scaler_X_5.pkl,scaler_y_5.pkl,new_model_5.pkl
+6,vermont - coahuila de zaragoza,lr_model_6.pkl,svr_model_6.pkl,rnn_model_6.h5,scaler_X_6.pkl,scaler_y_6.pkl,new_model_6.pkl
+7,guanajuato - texas,lr_model_7.pkl,svr_model_7.pkl,rnn_model_7.h5,scaler_X_7.pkl,scaler_y_7.pkl,new_model_7.pkl
+8,aguascalientes - texas,lr_model_8.pkl,svr_model_8.pkl,rnn_model_8.h5,scaler_X_8.pkl,scaler_y_8.pkl,new_model_8.pkl
+9,hidalgo - texas,lr_model_9.pkl,svr_model_9.pkl,rnn_model_9.h5,scaler_X_9.pkl,scaler_y_9.pkl,new_model_9.pkl
+10,estado de mexico - baja california,lr_model_10.pkl,svr_model_10.pkl,rnn_model_10.h5,scaler_X_10.pkl,scaler_y_10.pkl,new_model_10.pkl
+11,aguascalientes - tamaulipas,lr_model_11.pkl,svr_model_11.pkl,rnn_model_11.h5,scaler_X_11.pkl,scaler_y_11.pkl,new_model_11.pkl
+12,texas - texas,lr_model_12.pkl,svr_model_12.pkl,rnn_model_12.h5,scaler_X_12.pkl,scaler_y_12.pkl,new_model_12.pkl
+13,wisconsin - aguascalientes,lr_model_13.pkl,svr_model_13.pkl,rnn_model_13.h5,scaler_X_13.pkl,scaler_y_13.pkl,new_model_13.pkl
+14,coahuila de zaragoza - estado de mexico,lr_model_14.pkl,svr_model_14.pkl,rnn_model_14.h5,scaler_X_14.pkl,scaler_y_14.pkl,new_model_14.pkl
+15,nuevo leon - massachusetts,lr_model_15.pkl,svr_model_15.pkl,rnn_model_15.h5,scaler_X_15.pkl,scaler_y_15.pkl,new_model_15.pkl
+16,texas - tamaulipas,lr_model_16.pkl,svr_model_16.pkl,rnn_model_16.h5,scaler_X_16.pkl,scaler_y_16.pkl,new_model_16.pkl
+17,estado de mexico - estado de mexico,lr_model_17.pkl,svr_model_17.pkl,rnn_model_17.h5,scaler_X_17.pkl,scaler_y_17.pkl,new_model_17.pkl
+18,north carolina - jalisco,lr_model_18.pkl,svr_model_18.pkl,rnn_model_18.h5,scaler_X_18.pkl,scaler_y_18.pkl,new_model_18.pkl
+19,texas - nuevo leon,lr_model_19.pkl,svr_model_19.pkl,rnn_model_19.h5,scaler_X_19.pkl,scaler_y_19.pkl,new_model_19.pkl
 20,nuevo leon - tamaulipas,lr_model_20.pkl,svr_model_20.pkl,rnn_model_20.h5,scaler_X_20.pkl,scaler_y_20.pkl,new_model_20.pkl
-21,texas - mississippi,lr_model_21.pkl,svr_model_21.pkl,rnn_model_21.h5,scaler_X_21.pkl,scaler_y_21.pkl,new_model_21.pkl
-22,texas - nuevo leon,lr_model_22.pkl,svr_model_22.pkl,rnn_model_22.h5,scaler_X_22.pkl,scaler_y_22.pkl,new_model_22.pkl
-23,nuevo leon - texas,lr_model_23.pkl,svr_model_23.pkl,rnn_model_23.h5,scaler_X_23.pkl,scaler_y_23.pkl,new_model_23.pkl
-24,puebla - texas,lr_model_24.pkl,svr_model_24.pkl,rnn_model_24.h5,scaler_X_24.pkl,scaler_y_24.pkl,new_model_24.pkl
-25,nuevo leon - north carolina,lr_model_25.pkl,svr_model_25.pkl,rnn_model_25.h5,scaler_X_25.pkl,scaler_y_25.pkl,new_model_25.pkl
-26,tamaulipas - hidalgo,lr_model_26.pkl,svr_model_26.pkl,rnn_model_26.h5,scaler_X_26.pkl,scaler_y_26.pkl,new_model_26.pkl
-27,california - baja california,lr_model_27.pkl,svr_model_27.pkl,rnn_model_27.h5,scaler_X_27.pkl,scaler_y_27.pkl,new_model_27.pkl
-28,estado de mexico - nuevo leon,lr_model_28.pkl,svr_model_28.pkl,rnn_model_28.h5,scaler_X_28.pkl,scaler_y_28.pkl,new_model_28.pkl
-29,nuevo leon - california,lr_model_29.pkl,svr_model_29.pkl,rnn_model_29.h5,scaler_X_29.pkl,scaler_y_29.pkl,new_model_29.pkl
-30,puebla - tamaulipas,lr_model_30.pkl,svr_model_30.pkl,rnn_model_30.h5,scaler_X_30.pkl,scaler_y_30.pkl,new_model_30.pkl
-31,hidalgo - texas,lr_model_31.pkl,svr_model_31.pkl,rnn_model_31.h5,scaler_X_31.pkl,scaler_y_31.pkl,new_model_31.pkl
-32,nuevo leon - south carolina,lr_model_32.pkl,svr_model_32.pkl,rnn_model_32.h5,scaler_X_32.pkl,scaler_y_32.pkl,new_model_32.pkl
-33,ciudad de mexico - new york,lr_model_33.pkl,svr_model_33.pkl,rnn_model_33.h5,scaler_X_33.pkl,scaler_y_33.pkl,new_model_33.pkl
-34,texas - missouri,lr_model_34.pkl,svr_model_34.pkl,rnn_model_34.h5,scaler_X_34.pkl,scaler_y_34.pkl,new_model_34.pkl
-35,jalisco - tamaulipas,lr_model_35.pkl,svr_model_35.pkl,rnn_model_35.h5,scaler_X_35.pkl,scaler_y_35.pkl,new_model_35.pkl
-36,jalisco - idaho,lr_model_36.pkl,svr_model_36.pkl,rnn_model_36.h5,scaler_X_36.pkl,scaler_y_36.pkl,new_model_36.pkl
-37,zacatecas - jalisco,lr_model_37.pkl,svr_model_37.pkl,rnn_model_37.h5,scaler_X_37.pkl,scaler_y_37.pkl,new_model_37.pkl
-38,nuevo leon - alabama,lr_model_38.pkl,svr_model_38.pkl,rnn_model_38.h5,scaler_X_38.pkl,scaler_y_38.pkl,new_model_38.pkl
-39,texas - washington,lr_model_39.pkl,svr_model_39.pkl,rnn_model_39.h5,scaler_X_39.pkl,scaler_y_39.pkl,new_model_39.pkl
-40,tamaulipas - nuevo leon,lr_model_40.pkl,svr_model_40.pkl,rnn_model_40.h5,scaler_X_40.pkl,scaler_y_40.pkl,new_model_40.pkl
-41,wisconsin - texas,lr_model_41.pkl,svr_model_41.pkl,rnn_model_41.h5,scaler_X_41.pkl,scaler_y_41.pkl,new_model_41.pkl
-42,ciudad de mexico - tamaulipas,lr_model_42.pkl,svr_model_42.pkl,rnn_model_42.h5,scaler_X_42.pkl,scaler_y_42.pkl,new_model_42.pkl
-43,west virginia - texas,lr_model_43.pkl,svr_model_43.pkl,rnn_model_43.h5,scaler_X_43.pkl,scaler_y_43.pkl,new_model_43.pkl
-44,texas - georgia,lr_model_44.pkl,svr_model_44.pkl,rnn_model_44.h5,scaler_X_44.pkl,scaler_y_44.pkl,new_model_44.pkl
+21,nuevo leon - missouri,lr_model_21.pkl,svr_model_21.pkl,rnn_model_21.h5,scaler_X_21.pkl,scaler_y_21.pkl,new_model_21.pkl
+22,puebla - texas,lr_model_22.pkl,svr_model_22.pkl,rnn_model_22.h5,scaler_X_22.pkl,scaler_y_22.pkl,new_model_22.pkl
+23,texas - coahuila,lr_model_23.pkl,svr_model_23.pkl,rnn_model_23.h5,scaler_X_23.pkl,scaler_y_23.pkl,new_model_23.pkl
+24,hidalgo - tamaulipas,lr_model_24.pkl,svr_model_24.pkl,rnn_model_24.h5,scaler_X_24.pkl,scaler_y_24.pkl,new_model_24.pkl
+25,texas - illinois,lr_model_25.pkl,svr_model_25.pkl,rnn_model_25.h5,scaler_X_25.pkl,scaler_y_25.pkl,new_model_25.pkl
+26,chihuahua - texas,lr_model_26.pkl,svr_model_26.pkl,rnn_model_26.h5,scaler_X_26.pkl,scaler_y_26.pkl,new_model_26.pkl
+27,nuevo leon - nuevo leon,lr_model_27.pkl,svr_model_27.pkl,rnn_model_27.h5,scaler_X_27.pkl,scaler_y_27.pkl,new_model_27.pkl
+28,nuevo leon - manitoba,lr_model_28.pkl,svr_model_28.pkl,rnn_model_28.h5,scaler_X_28.pkl,scaler_y_28.pkl,new_model_28.pkl
+29,estado de mexico - nuevo leon,lr_model_29.pkl,svr_model_29.pkl,rnn_model_29.h5,scaler_X_29.pkl,scaler_y_29.pkl,new_model_29.pkl
+30,north carolina - texas,lr_model_30.pkl,svr_model_30.pkl,rnn_model_30.h5,scaler_X_30.pkl,scaler_y_30.pkl,new_model_30.pkl
+31,queretaro - texas,lr_model_31.pkl,svr_model_31.pkl,rnn_model_31.h5,scaler_X_31.pkl,scaler_y_31.pkl,new_model_31.pkl
+32,texas - ciudad de mexico,lr_model_32.pkl,svr_model_32.pkl,rnn_model_32.h5,scaler_X_32.pkl,scaler_y_32.pkl,new_model_32.pkl
+33,arkansas - texas,lr_model_33.pkl,svr_model_33.pkl,rnn_model_33.h5,scaler_X_33.pkl,scaler_y_33.pkl,new_model_33.pkl
+34,guanajuato - estado de mexico,lr_model_34.pkl,svr_model_34.pkl,rnn_model_34.h5,scaler_X_34.pkl,scaler_y_34.pkl,new_model_34.pkl
+35,estado de mexico - florida,lr_model_35.pkl,svr_model_35.pkl,rnn_model_35.h5,scaler_X_35.pkl,scaler_y_35.pkl,new_model_35.pkl
+36,illinois - texas,lr_model_36.pkl,svr_model_36.pkl,rnn_model_36.h5,scaler_X_36.pkl,scaler_y_36.pkl,new_model_36.pkl
+37,nuevo leon - new york,lr_model_37.pkl,svr_model_37.pkl,rnn_model_37.h5,scaler_X_37.pkl,scaler_y_37.pkl,new_model_37.pkl
+38,guanajuato - virginia,lr_model_38.pkl,svr_model_38.pkl,rnn_model_38.h5,scaler_X_38.pkl,scaler_y_38.pkl,new_model_38.pkl
+39,texas - estado de mexico,lr_model_39.pkl,svr_model_39.pkl,rnn_model_39.h5,scaler_X_39.pkl,scaler_y_39.pkl,new_model_39.pkl
+40,texas - kentucky,lr_model_40.pkl,svr_model_40.pkl,rnn_model_40.h5,scaler_X_40.pkl,scaler_y_40.pkl,new_model_40.pkl
+41,jalisco - utah,lr_model_41.pkl,svr_model_41.pkl,rnn_model_41.h5,scaler_X_41.pkl,scaler_y_41.pkl,new_model_41.pkl
+42,ohio - coahuila de zaragoza,lr_model_42.pkl,svr_model_42.pkl,rnn_model_42.h5,scaler_X_42.pkl,scaler_y_42.pkl,new_model_42.pkl
+43,estado de mexico - tamaulipas,lr_model_43.pkl,svr_model_43.pkl,rnn_model_43.h5,scaler_X_43.pkl,scaler_y_43.pkl,new_model_43.pkl
+44,texas - alabama,lr_model_44.pkl,svr_model_44.pkl,rnn_model_44.h5,scaler_X_44.pkl,scaler_y_44.pkl,new_model_44.pkl
 45,texas - new york,lr_model_45.pkl,svr_model_45.pkl,rnn_model_45.h5,scaler_X_45.pkl,scaler_y_45.pkl,new_model_45.pkl
-46,texas - arizona,lr_model_46.pkl,svr_model_46.pkl,rnn_model_46.h5,scaler_X_46.pkl,scaler_y_46.pkl,new_model_46.pkl
-47,texas - virginia,lr_model_47.pkl,svr_model_47.pkl,rnn_model_47.h5,scaler_X_47.pkl,scaler_y_47.pkl,new_model_47.pkl
-48,ciudad de mexico - pennsylvania,lr_model_48.pkl,svr_model_48.pkl,rnn_model_48.h5,scaler_X_48.pkl,scaler_y_48.pkl,new_model_48.pkl
-49,queretaro - illinois,lr_model_49.pkl,svr_model_49.pkl,rnn_model_49.h5,scaler_X_49.pkl,scaler_y_49.pkl,new_model_49.pkl
-50,jalisco - texas,lr_model_50.pkl,svr_model_50.pkl,rnn_model_50.h5,scaler_X_50.pkl,scaler_y_50.pkl,new_model_50.pkl
-51,texas - pennsylvania,lr_model_51.pkl,svr_model_51.pkl,rnn_model_51.h5,scaler_X_51.pkl,scaler_y_51.pkl,new_model_51.pkl
-52,jalisco - utah,lr_model_52.pkl,svr_model_52.pkl,rnn_model_52.h5,scaler_X_52.pkl,scaler_y_52.pkl,new_model_52.pkl
-53,estado de mexico - florida,lr_model_53.pkl,svr_model_53.pkl,rnn_model_53.h5,scaler_X_53.pkl,scaler_y_53.pkl,new_model_53.pkl
-54,new mexico - texas,lr_model_54.pkl,svr_model_54.pkl,rnn_model_54.h5,scaler_X_54.pkl,scaler_y_54.pkl,new_model_54.pkl
-55,indiana - texas,lr_model_55.pkl,svr_model_55.pkl,rnn_model_55.h5,scaler_X_55.pkl,scaler_y_55.pkl,new_model_55.pkl
-56,nuevo leon - missouri,lr_model_56.pkl,svr_model_56.pkl,rnn_model_56.h5,scaler_X_56.pkl,scaler_y_56.pkl,new_model_56.pkl
-57,wisconsin - ciudad de mexico,lr_model_57.pkl,svr_model_57.pkl,rnn_model_57.h5,scaler_X_57.pkl,scaler_y_57.pkl,new_model_57.pkl
-58,texas - california,lr_model_58.pkl,svr_model_58.pkl,rnn_model_58.h5,scaler_X_58.pkl,scaler_y_58.pkl,new_model_58.pkl
-59,texas - colorado,lr_model_59.pkl,svr_model_59.pkl,rnn_model_59.h5,scaler_X_59.pkl,scaler_y_59.pkl,new_model_59.pkl
-60,texas - tennessee,lr_model_60.pkl,svr_model_60.pkl,rnn_model_60.h5,scaler_X_60.pkl,scaler_y_60.pkl,new_model_60.pkl
-61,texas - coahuila,lr_model_61.pkl,svr_model_61.pkl,rnn_model_61.h5,scaler_X_61.pkl,scaler_y_61.pkl,new_model_61.pkl
-62,ciudad de mexico - coahuila,lr_model_62.pkl,svr_model_62.pkl,rnn_model_62.h5,scaler_X_62.pkl,scaler_y_62.pkl,new_model_62.pkl
-63,texas - queretaro,lr_model_63.pkl,svr_model_63.pkl,rnn_model_63.h5,scaler_X_63.pkl,scaler_y_63.pkl,new_model_63.pkl
-64,texas - alabama,lr_model_64.pkl,svr_model_64.pkl,rnn_model_64.h5,scaler_X_64.pkl,scaler_y_64.pkl,new_model_64.pkl
-65,texas - illinois,lr_model_65.pkl,svr_model_65.pkl,rnn_model_65.h5,scaler_X_65.pkl,scaler_y_65.pkl,new_model_65.pkl
-66,texas - new jersey,lr_model_66.pkl,svr_model_66.pkl,rnn_model_66.h5,scaler_X_66.pkl,scaler_y_66.pkl,new_model_66.pkl
-67,texas - michigan,lr_model_67.pkl,svr_model_67.pkl,rnn_model_67.h5,scaler_X_67.pkl,scaler_y_67.pkl,new_model_67.pkl
-68,ciudad de mexico - texas,lr_model_68.pkl,svr_model_68.pkl,rnn_model_68.h5,scaler_X_68.pkl,scaler_y_68.pkl,new_model_68.pkl
-69,ciudad de mexico - jalisco,lr_model_69.pkl,svr_model_69.pkl,rnn_model_69.h5,scaler_X_69.pkl,scaler_y_69.pkl,new_model_69.pkl
-70,queretaro - texas,lr_model_70.pkl,svr_model_70.pkl,rnn_model_70.h5,scaler_X_70.pkl,scaler_y_70.pkl,new_model_70.pkl
-71,texas - jalisco,lr_model_71.pkl,svr_model_71.pkl,rnn_model_71.h5,scaler_X_71.pkl,scaler_y_71.pkl,new_model_71.pkl
-72,estado de mexico - texas,lr_model_72.pkl,svr_model_72.pkl,rnn_model_72.h5,scaler_X_72.pkl,scaler_y_72.pkl,new_model_72.pkl
-73,baja california - nevada,lr_model_73.pkl,svr_model_73.pkl,rnn_model_73.h5,scaler_X_73.pkl,scaler_y_73.pkl,new_model_73.pkl
-74,baja california - colorado,lr_model_74.pkl,svr_model_74.pkl,rnn_model_74.h5,scaler_X_74.pkl,scaler_y_74.pkl,new_model_74.pkl
-75,kentucky - texas,lr_model_75.pkl,svr_model_75.pkl,rnn_model_75.h5,scaler_X_75.pkl,scaler_y_75.pkl,new_model_75.pkl
-76,baja california - new mexico,lr_model_76.pkl,svr_model_76.pkl,rnn_model_76.h5,scaler_X_76.pkl,scaler_y_76.pkl,new_model_76.pkl
-77,tamaulipas - estado de mexico,lr_model_77.pkl,svr_model_77.pkl,rnn_model_77.h5,scaler_X_77.pkl,scaler_y_77.pkl,new_model_77.pkl
-78,texas - estado de mexico,lr_model_78.pkl,svr_model_78.pkl,rnn_model_78.h5,scaler_X_78.pkl,scaler_y_78.pkl,new_model_78.pkl
-79,nuevo leon - ohio,lr_model_79.pkl,svr_model_79.pkl,rnn_model_79.h5,scaler_X_79.pkl,scaler_y_79.pkl,new_model_79.pkl
-80,nuevo leon - estado de mexico,lr_model_80.pkl,svr_model_80.pkl,rnn_model_80.h5,scaler_X_80.pkl,scaler_y_80.pkl,new_model_80.pkl
-81,texas - hidalgo,lr_model_81.pkl,svr_model_81.pkl,rnn_model_81.h5,scaler_X_81.pkl,scaler_y_81.pkl,new_model_81.pkl
-82,nuevo leon - arizona,lr_model_82.pkl,svr_model_82.pkl,rnn_model_82.h5,scaler_X_82.pkl,scaler_y_82.pkl,new_model_82.pkl
-83,coahuila - tamaulipas,lr_model_83.pkl,svr_model_83.pkl,rnn_model_83.h5,scaler_X_83.pkl,scaler_y_83.pkl,new_model_83.pkl
-84,nuevo leon - nuevo leon,lr_model_84.pkl,svr_model_84.pkl,rnn_model_84.h5,scaler_X_84.pkl,scaler_y_84.pkl,new_model_84.pkl
-85,texas - north carolina,lr_model_85.pkl,svr_model_85.pkl,rnn_model_85.h5,scaler_X_85.pkl,scaler_y_85.pkl,new_model_85.pkl
-86,texas - ciudad de mexico,lr_model_86.pkl,svr_model_86.pkl,rnn_model_86.h5,scaler_X_86.pkl,scaler_y_86.pkl,new_model_86.pkl
-87,ciudad de mexico - estado de mexico,lr_model_87.pkl,svr_model_87.pkl,rnn_model_87.h5,scaler_X_87.pkl,scaler_y_87.pkl,new_model_87.pkl
-88,california - texas,lr_model_88.pkl,svr_model_88.pkl,rnn_model_88.h5,scaler_X_88.pkl,scaler_y_88.pkl,new_model_88.pkl
-89,illinois - indiana,lr_model_89.pkl,svr_model_89.pkl,rnn_model_89.h5,scaler_X_89.pkl,scaler_y_89.pkl,new_model_89.pkl
-90,missouri - texas,lr_model_90.pkl,svr_model_90.pkl,rnn_model_90.h5,scaler_X_90.pkl,scaler_y_90.pkl,new_model_90.pkl
-91,queretaro - tamaulipas,lr_model_91.pkl,svr_model_91.pkl,rnn_model_91.h5,scaler_X_91.pkl,scaler_y_91.pkl,new_model_91.pkl
-92,minnesota - texas,lr_model_92.pkl,svr_model_92.pkl,rnn_model_92.h5,scaler_X_92.pkl,scaler_y_92.pkl,new_model_92.pkl
-93,tennessee - texas,lr_model_93.pkl,svr_model_93.pkl,rnn_model_93.h5,scaler_X_93.pkl,scaler_y_93.pkl,new_model_93.pkl
-94,nuevo leon - michigan,lr_model_94.pkl,svr_model_94.pkl,rnn_model_94.h5,scaler_X_94.pkl,scaler_y_94.pkl,new_model_94.pkl
-95,vermont - coahuila de zaragoza,lr_model_95.pkl,svr_model_95.pkl,rnn_model_95.h5,scaler_X_95.pkl,scaler_y_95.pkl,new_model_95.pkl
-96,guanajuato - texas,lr_model_96.pkl,svr_model_96.pkl,rnn_model_96.h5,scaler_X_96.pkl,scaler_y_96.pkl,new_model_96.pkl
-97,aguascalientes - texas,lr_model_97.pkl,svr_model_97.pkl,rnn_model_97.h5,scaler_X_97.pkl,scaler_y_97.pkl,new_model_97.pkl
-98,estado de mexico - baja california,lr_model_98.pkl,svr_model_98.pkl,rnn_model_98.h5,scaler_X_98.pkl,scaler_y_98.pkl,new_model_98.pkl
-99,aguascalientes - tamaulipas,lr_model_99.pkl,svr_model_99.pkl,rnn_model_99.h5,scaler_X_99.pkl,scaler_y_99.pkl,new_model_99.pkl
-100,wisconsin - aguascalientes,lr_model_100.pkl,svr_model_100.pkl,rnn_model_100.h5,scaler_X_100.pkl,scaler_y_100.pkl,new_model_100.pkl
-101,coahuila de zaragoza - estado de mexico,lr_model_101.pkl,svr_model_101.pkl,rnn_model_101.h5,scaler_X_101.pkl,scaler_y_101.pkl,new_model_101.pkl
-102,nuevo leon - massachusetts,lr_model_102.pkl,svr_model_102.pkl,rnn_model_102.h5,scaler_X_102.pkl,scaler_y_102.pkl,new_model_102.pkl
-103,estado de mexico - estado de mexico,lr_model_103.pkl,svr_model_103.pkl,rnn_model_103.h5,scaler_X_103.pkl,scaler_y_103.pkl,new_model_103.pkl
-104,north carolina - jalisco,lr_model_104.pkl,svr_model_104.pkl,rnn_model_104.h5,scaler_X_104.pkl,scaler_y_104.pkl,new_model_104.pkl
-105,chihuahua - texas,lr_model_105.pkl,svr_model_105.pkl,rnn_model_105.h5,scaler_X_105.pkl,scaler_y_105.pkl,new_model_105.pkl
-106,nuevo leon - manitoba,lr_model_106.pkl,svr_model_106.pkl,rnn_model_106.h5,scaler_X_106.pkl,scaler_y_106.pkl,new_model_106.pkl
-107,arkansas - texas,lr_model_107.pkl,svr_model_107.pkl,rnn_model_107.h5,scaler_X_107.pkl,scaler_y_107.pkl,new_model_107.pkl
-108,guanajuato - estado de mexico,lr_model_108.pkl,svr_model_108.pkl,rnn_model_108.h5,scaler_X_108.pkl,scaler_y_108.pkl,new_model_108.pkl
-109,nuevo leon - new york,lr_model_109.pkl,svr_model_109.pkl,rnn_model_109.h5,scaler_X_109.pkl,scaler_y_109.pkl,new_model_109.pkl
-110,guanajuato - virginia,lr_model_110.pkl,svr_model_110.pkl,rnn_model_110.h5,scaler_X_110.pkl,scaler_y_110.pkl,new_model_110.pkl
-111,ohio - coahuila de zaragoza,lr_model_111.pkl,svr_model_111.pkl,rnn_model_111.h5,scaler_X_111.pkl,scaler_y_111.pkl,new_model_111.pkl
-112,nuevo leon - jalisco,lr_model_112.pkl,svr_model_112.pkl,rnn_model_112.h5,scaler_X_112.pkl,scaler_y_112.pkl,new_model_112.pkl
-113,estado de mexico - ciudad de mexico,lr_model_113.pkl,svr_model_113.pkl,rnn_model_113.h5,scaler_X_113.pkl,scaler_y_113.pkl,new_model_113.pkl
-114,texas - quebec,lr_model_114.pkl,svr_model_114.pkl,rnn_model_114.h5,scaler_X_114.pkl,scaler_y_114.pkl,new_model_114.pkl
-115,estado de mexico - jalisco,lr_model_115.pkl,svr_model_115.pkl,rnn_model_115.h5,scaler_X_115.pkl,scaler_y_115.pkl,new_model_115.pkl
-116,texas - guanajuato,lr_model_116.pkl,svr_model_116.pkl,rnn_model_116.h5,scaler_X_116.pkl,scaler_y_116.pkl,new_model_116.pkl
-117,maryland - texas,lr_model_117.pkl,svr_model_117.pkl,rnn_model_117.h5,scaler_X_117.pkl,scaler_y_117.pkl,new_model_117.pkl
-118,nuevo leon - illinois,lr_model_118.pkl,svr_model_118.pkl,rnn_model_118.h5,scaler_X_118.pkl,scaler_y_118.pkl,new_model_118.pkl
-119,nuevo leon - oklahoma,lr_model_119.pkl,svr_model_119.pkl,rnn_model_119.h5,scaler_X_119.pkl,scaler_y_119.pkl,new_model_119.pkl
-120,new york - texas,lr_model_120.pkl,svr_model_120.pkl,rnn_model_120.h5,scaler_X_120.pkl,scaler_y_120.pkl,new_model_120.pkl
-121,estado de mexico - guanajuato,lr_model_121.pkl,svr_model_121.pkl,rnn_model_121.h5,scaler_X_121.pkl,scaler_y_121.pkl,new_model_121.pkl
-122,coahuila de zaragoza - north carolina,lr_model_122.pkl,svr_model_122.pkl,rnn_model_122.h5,scaler_X_122.pkl,scaler_y_122.pkl,new_model_122.pkl
-123,jalisco - estado de mexico,lr_model_123.pkl,svr_model_123.pkl,rnn_model_123.h5,scaler_X_123.pkl,scaler_y_123.pkl,new_model_123.pkl
-124,missouri - queretaro,lr_model_124.pkl,svr_model_124.pkl,rnn_model_124.h5,scaler_X_124.pkl,scaler_y_124.pkl,new_model_124.pkl
-125,jalisco - ciudad de mexico,lr_model_125.pkl,svr_model_125.pkl,rnn_model_125.h5,scaler_X_125.pkl,scaler_y_125.pkl,new_model_125.pkl
-126,wisconsin - guanajuato,lr_model_126.pkl,svr_model_126.pkl,rnn_model_126.h5,scaler_X_126.pkl,scaler_y_126.pkl,new_model_126.pkl
-127,jalisco - nuevo leon,lr_model_127.pkl,svr_model_127.pkl,rnn_model_127.h5,scaler_X_127.pkl,scaler_y_127.pkl,new_model_127.pkl
-128,ciudad de mexico - nuevo leon,lr_model_128.pkl,svr_model_128.pkl,rnn_model_128.h5,scaler_X_128.pkl,scaler_y_128.pkl,new_model_128.pkl
-129,indiana - florida,lr_model_129.pkl,svr_model_129.pkl,rnn_model_129.h5,scaler_X_129.pkl,scaler_y_129.pkl,new_model_129.pkl
-130,illinois - tennessee,lr_model_130.pkl,svr_model_130.pkl,rnn_model_130.h5,scaler_X_130.pkl,scaler_y_130.pkl,new_model_130.pkl
-131,estado de mexico - queretaro,lr_model_131.pkl,svr_model_131.pkl,rnn_model_131.h5,scaler_X_131.pkl,scaler_y_131.pkl,new_model_131.pkl
-132,louisiana - estado de mexico,lr_model_132.pkl,svr_model_132.pkl,rnn_model_132.h5,scaler_X_132.pkl,scaler_y_132.pkl,new_model_132.pkl
-133,pennsylvania - texas,lr_model_133.pkl,svr_model_133.pkl,rnn_model_133.h5,scaler_X_133.pkl,scaler_y_133.pkl,new_model_133.pkl
-134,new jersey - indiana,lr_model_134.pkl,svr_model_134.pkl,rnn_model_134.h5,scaler_X_134.pkl,scaler_y_134.pkl,new_model_134.pkl
-135,alabama - jalisco,lr_model_135.pkl,svr_model_135.pkl,rnn_model_135.h5,scaler_X_135.pkl,scaler_y_135.pkl,new_model_135.pkl
-136,san luis potosi - oklahoma,lr_model_136.pkl,svr_model_136.pkl,rnn_model_136.h5,scaler_X_136.pkl,scaler_y_136.pkl,new_model_136.pkl
-137,yucatan - veracruz,lr_model_137.pkl,svr_model_137.pkl,rnn_model_137.h5,scaler_X_137.pkl,scaler_y_137.pkl,new_model_137.pkl
-138,texas - san luis potosi,lr_model_138.pkl,svr_model_138.pkl,rnn_model_138.h5,scaler_X_138.pkl,scaler_y_138.pkl,new_model_138.pkl
-139,missouri - illinois,lr_model_139.pkl,svr_model_139.pkl,rnn_model_139.h5,scaler_X_139.pkl,scaler_y_139.pkl,new_model_139.pkl
-140,guanajuato - guanajuato,lr_model_140.pkl,svr_model_140.pkl,rnn_model_140.h5,scaler_X_140.pkl,scaler_y_140.pkl,new_model_140.pkl
-141,louisiana - texas,lr_model_141.pkl,svr_model_141.pkl,rnn_model_141.h5,scaler_X_141.pkl,scaler_y_141.pkl,new_model_141.pkl
-142,ontario - texas,lr_model_142.pkl,svr_model_142.pkl,rnn_model_142.h5,scaler_X_142.pkl,scaler_y_142.pkl,new_model_142.pkl
-143,california - hidalgo,lr_model_143.pkl,svr_model_143.pkl,rnn_model_143.h5,scaler_X_143.pkl,scaler_y_143.pkl,new_model_143.pkl
-144,north carolina - mississippi,lr_model_144.pkl,svr_model_144.pkl,rnn_model_144.h5,scaler_X_144.pkl,scaler_y_144.pkl,new_model_144.pkl
-145,mississippi - nuevo leon,lr_model_145.pkl,svr_model_145.pkl,rnn_model_145.h5,scaler_X_145.pkl,scaler_y_145.pkl,new_model_145.pkl
-146,chihuahua - arizona,lr_model_146.pkl,svr_model_146.pkl,rnn_model_146.h5,scaler_X_146.pkl,scaler_y_146.pkl,new_model_146.pkl
-147,durango - arizona,lr_model_147.pkl,svr_model_147.pkl,rnn_model_147.h5,scaler_X_147.pkl,scaler_y_147.pkl,new_model_147.pkl
-148,durango - tamaulipas,lr_model_148.pkl,svr_model_148.pkl,rnn_model_148.h5,scaler_X_148.pkl,scaler_y_148.pkl,new_model_148.pkl
-149,mexico - estado de mexico,lr_model_149.pkl,svr_model_149.pkl,rnn_model_149.h5,scaler_X_149.pkl,scaler_y_149.pkl,new_model_149.pkl
-150,georgia - pennsylvania,lr_model_150.pkl,svr_model_150.pkl,rnn_model_150.h5,scaler_X_150.pkl,scaler_y_150.pkl,new_model_150.pkl
-151,mississippi - texas,lr_model_151.pkl,svr_model_151.pkl,rnn_model_151.h5,scaler_X_151.pkl,scaler_y_151.pkl,new_model_151.pkl
-152,georgia - florida,lr_model_152.pkl,svr_model_152.pkl,rnn_model_152.h5,scaler_X_152.pkl,scaler_y_152.pkl,new_model_152.pkl
-153,nuevo leon - wisconsin,lr_model_153.pkl,svr_model_153.pkl,rnn_model_153.h5,scaler_X_153.pkl,scaler_y_153.pkl,new_model_153.pkl
-154,texas - puebla,lr_model_154.pkl,svr_model_154.pkl,rnn_model_154.h5,scaler_X_154.pkl,scaler_y_154.pkl,new_model_154.pkl
-155,south carolina - florida,lr_model_155.pkl,svr_model_155.pkl,rnn_model_155.h5,scaler_X_155.pkl,scaler_y_155.pkl,new_model_155.pkl
-156,iowa - wisconsin,lr_model_156.pkl,svr_model_156.pkl,rnn_model_156.h5,scaler_X_156.pkl,scaler_y_156.pkl,new_model_156.pkl
-157,new jersey - pennsylvania,lr_model_157.pkl,svr_model_157.pkl,rnn_model_157.h5,scaler_X_157.pkl,scaler_y_157.pkl,new_model_157.pkl
-158,mississippi - puebla,lr_model_158.pkl,svr_model_158.pkl,rnn_model_158.h5,scaler_X_158.pkl,scaler_y_158.pkl,new_model_158.pkl
-159,nuevo leon - new jersey,lr_model_159.pkl,svr_model_159.pkl,rnn_model_159.h5,scaler_X_159.pkl,scaler_y_159.pkl,new_model_159.pkl
+46,kentucky - aguascalientes,lr_model_46.pkl,svr_model_46.pkl,rnn_model_46.h5,scaler_X_46.pkl,scaler_y_46.pkl,new_model_46.pkl
+47,nuevo leon - jalisco,lr_model_47.pkl,svr_model_47.pkl,rnn_model_47.h5,scaler_X_47.pkl,scaler_y_47.pkl,new_model_47.pkl
+48,estado de mexico - ciudad de mexico,lr_model_48.pkl,svr_model_48.pkl,rnn_model_48.h5,scaler_X_48.pkl,scaler_y_48.pkl,new_model_48.pkl
+49,texas - quebec,lr_model_49.pkl,svr_model_49.pkl,rnn_model_49.h5,scaler_X_49.pkl,scaler_y_49.pkl,new_model_49.pkl
+50,estado de mexico - texas,lr_model_50.pkl,svr_model_50.pkl,rnn_model_50.h5,scaler_X_50.pkl,scaler_y_50.pkl,new_model_50.pkl
+51,estado de mexico - jalisco,lr_model_51.pkl,svr_model_51.pkl,rnn_model_51.h5,scaler_X_51.pkl,scaler_y_51.pkl,new_model_51.pkl
+52,coahuila de zaragoza - north carolina,lr_model_52.pkl,svr_model_52.pkl,rnn_model_52.h5,scaler_X_52.pkl,scaler_y_52.pkl,new_model_52.pkl
+53,estado de mexico - guanajuato,lr_model_53.pkl,svr_model_53.pkl,rnn_model_53.h5,scaler_X_53.pkl,scaler_y_53.pkl,new_model_53.pkl
+54,nuevo leon - oklahoma,lr_model_54.pkl,svr_model_54.pkl,rnn_model_54.h5,scaler_X_54.pkl,scaler_y_54.pkl,new_model_54.pkl
+55,texas - guanajuato,lr_model_55.pkl,svr_model_55.pkl,rnn_model_55.h5,scaler_X_55.pkl,scaler_y_55.pkl,new_model_55.pkl
+56,missouri - queretaro,lr_model_56.pkl,svr_model_56.pkl,rnn_model_56.h5,scaler_X_56.pkl,scaler_y_56.pkl,new_model_56.pkl
+57,maryland - texas,lr_model_57.pkl,svr_model_57.pkl,rnn_model_57.h5,scaler_X_57.pkl,scaler_y_57.pkl,new_model_57.pkl
+58,nuevo leon - illinois,lr_model_58.pkl,svr_model_58.pkl,rnn_model_58.h5,scaler_X_58.pkl,scaler_y_58.pkl,new_model_58.pkl
+59,guanajuato - tamaulipas,lr_model_59.pkl,svr_model_59.pkl,rnn_model_59.h5,scaler_X_59.pkl,scaler_y_59.pkl,new_model_59.pkl
+60,new york - texas,lr_model_60.pkl,svr_model_60.pkl,rnn_model_60.h5,scaler_X_60.pkl,scaler_y_60.pkl,new_model_60.pkl
+61,nuevo leon - estado de mexico,lr_model_61.pkl,svr_model_61.pkl,rnn_model_61.h5,scaler_X_61.pkl,scaler_y_61.pkl,new_model_61.pkl
+62,wisconsin - texas,lr_model_62.pkl,svr_model_62.pkl,rnn_model_62.h5,scaler_X_62.pkl,scaler_y_62.pkl,new_model_62.pkl
+63,texas - ohio,lr_model_63.pkl,svr_model_63.pkl,rnn_model_63.h5,scaler_X_63.pkl,scaler_y_63.pkl,new_model_63.pkl
+64,texas - georgia,lr_model_64.pkl,svr_model_64.pkl,rnn_model_64.h5,scaler_X_64.pkl,scaler_y_64.pkl,new_model_64.pkl
+65,baja california - california,lr_model_65.pkl,svr_model_65.pkl,rnn_model_65.h5,scaler_X_65.pkl,scaler_y_65.pkl,new_model_65.pkl
+66,texas - virginia,lr_model_66.pkl,svr_model_66.pkl,rnn_model_66.h5,scaler_X_66.pkl,scaler_y_66.pkl,new_model_66.pkl
+67,texas - california,lr_model_67.pkl,svr_model_67.pkl,rnn_model_67.h5,scaler_X_67.pkl,scaler_y_67.pkl,new_model_67.pkl
+68,nuevo leon - michigan,lr_model_68.pkl,svr_model_68.pkl,rnn_model_68.h5,scaler_X_68.pkl,scaler_y_68.pkl,new_model_68.pkl
+69,nuevo leon - arizona,lr_model_69.pkl,svr_model_69.pkl,rnn_model_69.h5,scaler_X_69.pkl,scaler_y_69.pkl,new_model_69.pkl
+70,ohio - texas,lr_model_70.pkl,svr_model_70.pkl,rnn_model_70.h5,scaler_X_70.pkl,scaler_y_70.pkl,new_model_70.pkl
+71,jalisco - ciudad de mexico,lr_model_71.pkl,svr_model_71.pkl,rnn_model_71.h5,scaler_X_71.pkl,scaler_y_71.pkl,new_model_71.pkl
+72,california - hidalgo,lr_model_72.pkl,svr_model_72.pkl,rnn_model_72.h5,scaler_X_72.pkl,scaler_y_72.pkl,new_model_72.pkl
+73,jalisco - estado de mexico,lr_model_73.pkl,svr_model_73.pkl,rnn_model_73.h5,scaler_X_73.pkl,scaler_y_73.pkl,new_model_73.pkl
+74,north carolina - mississippi,lr_model_74.pkl,svr_model_74.pkl,rnn_model_74.h5,scaler_X_74.pkl,scaler_y_74.pkl,new_model_74.pkl
+75,texas - pennsylvania,lr_model_75.pkl,svr_model_75.pkl,rnn_model_75.h5,scaler_X_75.pkl,scaler_y_75.pkl,new_model_75.pkl
+76,tamaulipas - estado de mexico,lr_model_76.pkl,svr_model_76.pkl,rnn_model_76.h5,scaler_X_76.pkl,scaler_y_76.pkl,new_model_76.pkl
+77,texas - florida,lr_model_77.pkl,svr_model_77.pkl,rnn_model_77.h5,scaler_X_77.pkl,scaler_y_77.pkl,new_model_77.pkl
+78,texas - north carolina,lr_model_78.pkl,svr_model_78.pkl,rnn_model_78.h5,scaler_X_78.pkl,scaler_y_78.pkl,new_model_78.pkl
+79,texas - indiana,lr_model_79.pkl,svr_model_79.pkl,rnn_model_79.h5,scaler_X_79.pkl,scaler_y_79.pkl,new_model_79.pkl
+80,ontario - texas,lr_model_80.pkl,svr_model_80.pkl,rnn_model_80.h5,scaler_X_80.pkl,scaler_y_80.pkl,new_model_80.pkl
+81,texas - michigan,lr_model_81.pkl,svr_model_81.pkl,rnn_model_81.h5,scaler_X_81.pkl,scaler_y_81.pkl,new_model_81.pkl
+82,texas - arizona,lr_model_82.pkl,svr_model_82.pkl,rnn_model_82.h5,scaler_X_82.pkl,scaler_y_82.pkl,new_model_82.pkl
+83,mississippi - nuevo leon,lr_model_83.pkl,svr_model_83.pkl,rnn_model_83.h5,scaler_X_83.pkl,scaler_y_83.pkl,new_model_83.pkl
+84,texas - mississippi,lr_model_84.pkl,svr_model_84.pkl,rnn_model_84.h5,scaler_X_84.pkl,scaler_y_84.pkl,new_model_84.pkl
+85,texas - san luis potosi,lr_model_85.pkl,svr_model_85.pkl,rnn_model_85.h5,scaler_X_85.pkl,scaler_y_85.pkl,new_model_85.pkl
+86,jalisco - tamaulipas,lr_model_86.pkl,svr_model_86.pkl,rnn_model_86.h5,scaler_X_86.pkl,scaler_y_86.pkl,new_model_86.pkl
+87,tamaulipas - hidalgo,lr_model_87.pkl,svr_model_87.pkl,rnn_model_87.h5,scaler_X_87.pkl,scaler_y_87.pkl,new_model_87.pkl
+88,ciudad de mexico - estado de mexico,lr_model_88.pkl,svr_model_88.pkl,rnn_model_88.h5,scaler_X_88.pkl,scaler_y_88.pkl,new_model_88.pkl
+89,california - texas,lr_model_89.pkl,svr_model_89.pkl,rnn_model_89.h5,scaler_X_89.pkl,scaler_y_89.pkl,new_model_89.pkl
+90,chihuahua - arizona,lr_model_90.pkl,svr_model_90.pkl,rnn_model_90.h5,scaler_X_90.pkl,scaler_y_90.pkl,new_model_90.pkl
+91,tennessee - texas,lr_model_91.pkl,svr_model_91.pkl,rnn_model_91.h5,scaler_X_91.pkl,scaler_y_91.pkl,new_model_91.pkl
+92,tamaulipas - nuevo leon,lr_model_92.pkl,svr_model_92.pkl,rnn_model_92.h5,scaler_X_92.pkl,scaler_y_92.pkl,new_model_92.pkl
+93,texas - hidalgo,lr_model_93.pkl,svr_model_93.pkl,rnn_model_93.h5,scaler_X_93.pkl,scaler_y_93.pkl,new_model_93.pkl
+94,texas - new jersey,lr_model_94.pkl,svr_model_94.pkl,rnn_model_94.h5,scaler_X_94.pkl,scaler_y_94.pkl,new_model_94.pkl
+95,durango - arizona,lr_model_95.pkl,svr_model_95.pkl,rnn_model_95.h5,scaler_X_95.pkl,scaler_y_95.pkl,new_model_95.pkl
+96,texas - queretaro,lr_model_96.pkl,svr_model_96.pkl,rnn_model_96.h5,scaler_X_96.pkl,scaler_y_96.pkl,new_model_96.pkl
+97,ciudad de mexico - tamaulipas,lr_model_97.pkl,svr_model_97.pkl,rnn_model_97.h5,scaler_X_97.pkl,scaler_y_97.pkl,new_model_97.pkl
+98,durango - tamaulipas,lr_model_98.pkl,svr_model_98.pkl,rnn_model_98.h5,scaler_X_98.pkl,scaler_y_98.pkl,new_model_98.pkl
+99,baja california - arizona,lr_model_99.pkl,svr_model_99.pkl,rnn_model_99.h5,scaler_X_99.pkl,scaler_y_99.pkl,new_model_99.pkl
+100,yucatan - tamaulipas,lr_model_100.pkl,svr_model_100.pkl,rnn_model_100.h5,scaler_X_100.pkl,scaler_y_100.pkl,new_model_100.pkl
+101,texas - missouri,lr_model_101.pkl,svr_model_101.pkl,rnn_model_101.h5,scaler_X_101.pkl,scaler_y_101.pkl,new_model_101.pkl
+102,baja california - nevada,lr_model_102.pkl,svr_model_102.pkl,rnn_model_102.h5,scaler_X_102.pkl,scaler_y_102.pkl,new_model_102.pkl
+103,baja california - new mexico,lr_model_103.pkl,svr_model_103.pkl,rnn_model_103.h5,scaler_X_103.pkl,scaler_y_103.pkl,new_model_103.pkl
+104,baja california - colorado,lr_model_104.pkl,svr_model_104.pkl,rnn_model_104.h5,scaler_X_104.pkl,scaler_y_104.pkl,new_model_104.pkl
+105,jalisco - texas,lr_model_105.pkl,svr_model_105.pkl,rnn_model_105.h5,scaler_X_105.pkl,scaler_y_105.pkl,new_model_105.pkl
+106,wisconsin - guanajuato,lr_model_106.pkl,svr_model_106.pkl,rnn_model_106.h5,scaler_X_106.pkl,scaler_y_106.pkl,new_model_106.pkl
+107,kentucky - texas,lr_model_107.pkl,svr_model_107.pkl,rnn_model_107.h5,scaler_X_107.pkl,scaler_y_107.pkl,new_model_107.pkl
+108,mexico - estado de mexico,lr_model_108.pkl,svr_model_108.pkl,rnn_model_108.h5,scaler_X_108.pkl,scaler_y_108.pkl,new_model_108.pkl
+109,virginia - texas,lr_model_109.pkl,svr_model_109.pkl,rnn_model_109.h5,scaler_X_109.pkl,scaler_y_109.pkl,new_model_109.pkl
+110,missouri - texas,lr_model_110.pkl,svr_model_110.pkl,rnn_model_110.h5,scaler_X_110.pkl,scaler_y_110.pkl,new_model_110.pkl
+111,nuevo leon - indiana,lr_model_111.pkl,svr_model_111.pkl,rnn_model_111.h5,scaler_X_111.pkl,scaler_y_111.pkl,new_model_111.pkl
+112,nuevo leon - north carolina,lr_model_112.pkl,svr_model_112.pkl,rnn_model_112.h5,scaler_X_112.pkl,scaler_y_112.pkl,new_model_112.pkl
+113,georgia - pennsylvania,lr_model_113.pkl,svr_model_113.pkl,rnn_model_113.h5,scaler_X_113.pkl,scaler_y_113.pkl,new_model_113.pkl
+114,nuevo leon - california,lr_model_114.pkl,svr_model_114.pkl,rnn_model_114.h5,scaler_X_114.pkl,scaler_y_114.pkl,new_model_114.pkl
+115,california - baja california,lr_model_115.pkl,svr_model_115.pkl,rnn_model_115.h5,scaler_X_115.pkl,scaler_y_115.pkl,new_model_115.pkl
+116,mississippi - texas,lr_model_116.pkl,svr_model_116.pkl,rnn_model_116.h5,scaler_X_116.pkl,scaler_y_116.pkl,new_model_116.pkl
+117,georgia - florida,lr_model_117.pkl,svr_model_117.pkl,rnn_model_117.h5,scaler_X_117.pkl,scaler_y_117.pkl,new_model_117.pkl
+118,pennsylvania - texas,lr_model_118.pkl,svr_model_118.pkl,rnn_model_118.h5,scaler_X_118.pkl,scaler_y_118.pkl,new_model_118.pkl
+119,nuevo leon - mississippi,lr_model_119.pkl,svr_model_119.pkl,rnn_model_119.h5,scaler_X_119.pkl,scaler_y_119.pkl,new_model_119.pkl
+120,yucatan - veracruz,lr_model_120.pkl,svr_model_120.pkl,rnn_model_120.h5,scaler_X_120.pkl,scaler_y_120.pkl,new_model_120.pkl
+121,nuevo leon - wisconsin,lr_model_121.pkl,svr_model_121.pkl,rnn_model_121.h5,scaler_X_121.pkl,scaler_y_121.pkl,new_model_121.pkl
+122,ciudad de mexico - jalisco,lr_model_122.pkl,svr_model_122.pkl,rnn_model_122.h5,scaler_X_122.pkl,scaler_y_122.pkl,new_model_122.pkl
+123,estado de mexico - queretaro,lr_model_123.pkl,svr_model_123.pkl,rnn_model_123.h5,scaler_X_123.pkl,scaler_y_123.pkl,new_model_123.pkl
+124,nuevo leon - south carolina,lr_model_124.pkl,svr_model_124.pkl,rnn_model_124.h5,scaler_X_124.pkl,scaler_y_124.pkl,new_model_124.pkl
+125,jalisco - nuevo leon,lr_model_125.pkl,svr_model_125.pkl,rnn_model_125.h5,scaler_X_125.pkl,scaler_y_125.pkl,new_model_125.pkl
+126,puebla - tamaulipas,lr_model_126.pkl,svr_model_126.pkl,rnn_model_126.h5,scaler_X_126.pkl,scaler_y_126.pkl,new_model_126.pkl
+127,ciudad de mexico - new york,lr_model_127.pkl,svr_model_127.pkl,rnn_model_127.h5,scaler_X_127.pkl,scaler_y_127.pkl,new_model_127.pkl
+128,indiana - texas,lr_model_128.pkl,svr_model_128.pkl,rnn_model_128.h5,scaler_X_128.pkl,scaler_y_128.pkl,new_model_128.pkl
+129,louisiana - estado de mexico,lr_model_129.pkl,svr_model_129.pkl,rnn_model_129.h5,scaler_X_129.pkl,scaler_y_129.pkl,new_model_129.pkl
+130,zacatecas - jalisco,lr_model_130.pkl,svr_model_130.pkl,rnn_model_130.h5,scaler_X_130.pkl,scaler_y_130.pkl,new_model_130.pkl
+131,coahuila - tamaulipas,lr_model_131.pkl,svr_model_131.pkl,rnn_model_131.h5,scaler_X_131.pkl,scaler_y_131.pkl,new_model_131.pkl
+132,ciudad de mexico - pennsylvania,lr_model_132.pkl,svr_model_132.pkl,rnn_model_132.h5,scaler_X_132.pkl,scaler_y_132.pkl,new_model_132.pkl
+133,nuevo leon - alabama,lr_model_133.pkl,svr_model_133.pkl,rnn_model_133.h5,scaler_X_133.pkl,scaler_y_133.pkl,new_model_133.pkl
+134,jalisco - idaho,lr_model_134.pkl,svr_model_134.pkl,rnn_model_134.h5,scaler_X_134.pkl,scaler_y_134.pkl,new_model_134.pkl
+135,texas - washington,lr_model_135.pkl,svr_model_135.pkl,rnn_model_135.h5,scaler_X_135.pkl,scaler_y_135.pkl,new_model_135.pkl
+136,ciudad de mexico - texas,lr_model_136.pkl,svr_model_136.pkl,rnn_model_136.h5,scaler_X_136.pkl,scaler_y_136.pkl,new_model_136.pkl
+137,west virginia - texas,lr_model_137.pkl,svr_model_137.pkl,rnn_model_137.h5,scaler_X_137.pkl,scaler_y_137.pkl,new_model_137.pkl
+138,texas - colorado,lr_model_138.pkl,svr_model_138.pkl,rnn_model_138.h5,scaler_X_138.pkl,scaler_y_138.pkl,new_model_138.pkl
+139,queretaro - illinois,lr_model_139.pkl,svr_model_139.pkl,rnn_model_139.h5,scaler_X_139.pkl,scaler_y_139.pkl,new_model_139.pkl
+140,alabama - jalisco,lr_model_140.pkl,svr_model_140.pkl,rnn_model_140.h5,scaler_X_140.pkl,scaler_y_140.pkl,new_model_140.pkl
+141,new mexico - texas,lr_model_141.pkl,svr_model_141.pkl,rnn_model_141.h5,scaler_X_141.pkl,scaler_y_141.pkl,new_model_141.pkl
+142,minnesota - texas,lr_model_142.pkl,svr_model_142.pkl,rnn_model_142.h5,scaler_X_142.pkl,scaler_y_142.pkl,new_model_142.pkl
+143,texas - puebla,lr_model_143.pkl,svr_model_143.pkl,rnn_model_143.h5,scaler_X_143.pkl,scaler_y_143.pkl,new_model_143.pkl
+144,new jersey - indiana,lr_model_144.pkl,svr_model_144.pkl,rnn_model_144.h5,scaler_X_144.pkl,scaler_y_144.pkl,new_model_144.pkl
+145,south carolina - florida,lr_model_145.pkl,svr_model_145.pkl,rnn_model_145.h5,scaler_X_145.pkl,scaler_y_145.pkl,new_model_145.pkl
+146,iowa - wisconsin,lr_model_146.pkl,svr_model_146.pkl,rnn_model_146.h5,scaler_X_146.pkl,scaler_y_146.pkl,new_model_146.pkl
+147,wisconsin - ciudad de mexico,lr_model_147.pkl,svr_model_147.pkl,rnn_model_147.h5,scaler_X_147.pkl,scaler_y_147.pkl,new_model_147.pkl
+148,ciudad de mexico - nuevo leon,lr_model_148.pkl,svr_model_148.pkl,rnn_model_148.h5,scaler_X_148.pkl,scaler_y_148.pkl,new_model_148.pkl
+149,missouri - illinois,lr_model_149.pkl,svr_model_149.pkl,rnn_model_149.h5,scaler_X_149.pkl,scaler_y_149.pkl,new_model_149.pkl
+150,new jersey - pennsylvania,lr_model_150.pkl,svr_model_150.pkl,rnn_model_150.h5,scaler_X_150.pkl,scaler_y_150.pkl,new_model_150.pkl
+151,illinois - tennessee,lr_model_151.pkl,svr_model_151.pkl,rnn_model_151.h5,scaler_X_151.pkl,scaler_y_151.pkl,new_model_151.pkl
+152,illinois - indiana,lr_model_152.pkl,svr_model_152.pkl,rnn_model_152.h5,scaler_X_152.pkl,scaler_y_152.pkl,new_model_152.pkl
+153,mississippi - puebla,lr_model_153.pkl,svr_model_153.pkl,rnn_model_153.h5,scaler_X_153.pkl,scaler_y_153.pkl,new_model_153.pkl
+154,nuevo leon - new jersey,lr_model_154.pkl,svr_model_154.pkl,rnn_model_154.h5,scaler_X_154.pkl,scaler_y_154.pkl,new_model_154.pkl
+155,indiana - florida,lr_model_155.pkl,svr_model_155.pkl,rnn_model_155.h5,scaler_X_155.pkl,scaler_y_155.pkl,new_model_155.pkl
+156,louisiana - texas,lr_model_156.pkl,svr_model_156.pkl,rnn_model_156.h5,scaler_X_156.pkl,scaler_y_156.pkl,new_model_156.pkl
+157,ciudad de mexico - coahuila,lr_model_157.pkl,svr_model_157.pkl,rnn_model_157.h5,scaler_X_157.pkl,scaler_y_157.pkl,new_model_157.pkl
+158,guanajuato - guanajuato,lr_model_158.pkl,svr_model_158.pkl,rnn_model_158.h5,scaler_X_158.pkl,scaler_y_158.pkl,new_model_158.pkl
+159,san luis potosi - oklahoma,lr_model_159.pkl,svr_model_159.pkl,rnn_model_159.h5,scaler_X_159.pkl,scaler_y_159.pkl,new_model_159.pkl
 160,queretaro - georgia,lr_model_160.pkl,svr_model_160.pkl,rnn_model_160.h5,scaler_X_160.pkl,scaler_y_160.pkl,new_model_160.pkl
 161,queretaro - ohio,lr_model_161.pkl,svr_model_161.pkl,rnn_model_161.h5,scaler_X_161.pkl,scaler_y_161.pkl,new_model_161.pkl
 162,queretaro - pennsylvania,lr_model_162.pkl,svr_model_162.pkl,rnn_model_162.h5,scaler_X_162.pkl,scaler_y_162.pkl,new_model_162.pkl

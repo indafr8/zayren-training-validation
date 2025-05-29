@@ -1,3 +1,3 @@
-models,lr_models,svr_models,rnn_models,scaler_X,scaler_y
-short,lr_model_short.pkl,svr_model_short.pkl,rnn_model_short.h5,scaler_X_short.pkl,scaler_y_short.pkl
+models,lr_models,svr_models,rnn_models,rnn_scaler_x,rnn_scaler_y
 long,lr_model_long.pkl,svr_model_long.pkl,rnn_model_long.h5,scaler_X_long.pkl,scaler_y_long.pkl
+short,lr_model_short.pkl,svr_model_short.pkl,rnn_model_short.h5,scaler_X_short.pkl,scaler_y_short.pkl
