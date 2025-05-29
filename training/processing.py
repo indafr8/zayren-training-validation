@@ -14,36 +14,28 @@ class ProcessingData:
     - Winsorización de datos
     """
     
-    def __init__(self, broker_id: str):
+    def __init__(self, broker_id: str, train_data_folder: Union[str, Path]):
         """
         Inicializa la clase ProcessingData.
 
         Args:
             broker_id: ID del broker para procesar sus datos
+            train_data_folder: Ruta a la carpeta de datos de entrenamiento
         """
         self.broker_id = broker_id
         self.output_dir = Path(f'output_data/{self.broker_id}')
         self.output_dir.mkdir(parents=True, exist_ok=True)
         
         try:
-            update = UpdateData(broker_id)
-            self.data = update.get_update_data()
-            self.data = self.__price_mile(self.data)
-            self.unique_routes = self.data['s2s_route'].unique()
-            self.data = self.__preprocessing()
-            self.data.to_csv(self.output_dir / 'segments_data.csv', index=False)
+            update = UpdateData(broker_id, train_data_folder)
+            self.dirty_data = update.get_update_data()
+            self.clean_data = self.__price_mile(self.dirty_data)
+            self.unique_routes = self.clean_data['s2s_route'].unique()
+            self.clean_data = self.__preprocessing()
+            self.clean_data.to_csv(self.output_dir / 'segments_data.csv', index=False)
         except Exception as e:
             print(f"Error al procesar datos: {str(e)}")
             raise
-    
-    def get_data(self) -> pd.DataFrame:
-        """
-        Obtiene los datos procesados.
-
-        Returns:
-            pd.DataFrame: DataFrame con los datos procesados
-        """
-        return self.data
 
     def __preprocessing(self) -> pd.DataFrame:
         """
@@ -56,7 +48,7 @@ class ProcessingData:
 
         for route in self.unique_routes:
             try:
-                df = self.data[self.data['s2s_route'] == route].copy()
+                df = self.clean_data[self.clean_data['s2s_route'] == route].copy()
                 df = self.__iqr_filter(df)
                 df = self.__winsoration(df)         
                 #df = self.__smooth_winsoration(df)

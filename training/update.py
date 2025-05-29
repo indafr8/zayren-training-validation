@@ -35,16 +35,61 @@ class UpdateData:
         """
         self.broker_id = broker_id
         self.train_data_folder = Path(train_data_folder)
-        self.folder = self.train_data_folder / ""
+        self.folder = self.train_data_folder
 
         try:
             self.base_df = pd.read_csv(f'past_data/{self.broker_id}.csv')
             self.__update_data()
         except FileNotFoundError:
             print(f"El archivo past_data/{self.broker_id}.csv no existe")
-            self.__new_broker_data()
+            self._new_broker_data()
         except Exception as e:
             print(f"Error al inicializar UpdateData: {str(e)}")
+            raise
+
+    def __update_data(self):
+        """
+        Actualiza los datos cuando existe un archivo histórico.
+        """
+        try:
+            df = self.__sql_query()
+            df = self.__normalize_text(df)
+            df = self.__zero_filter(df)
+            df = self.__convert_currency(df)
+            df = self.__inflation_adjustment(df)
+            df = self.__add_s2s_column(df)
+            df = self.__select_routes(df)
+            df = self.__add_s2s_id_update(df)
+            self.data = pd.concat([self.base_df, df], ignore_index=True)
+        except Exception as e:
+            print(f"Error actualizando datos: {str(e)}")
+            raise
+
+    def get_update_data(self) -> pd.DataFrame:
+        """
+        Obtiene los datos procesados.
+
+        Returns:
+            pd.DataFrame: DataFrame con los datos procesados
+        """
+        return self.data
+
+    def _new_broker_data(self):
+        """
+        Procesa datos nuevos cuando no hay datos históricos.
+        """
+        try:
+            df = self.__sql_query()
+            df = self.__normalize_text(df)
+            df = self.__zero_filter(df)
+            df = self.__convert_currency(df)
+            df = self.__inflation_adjustment(df)
+            df = self.__add_s2s_column(df)
+            df = self.__select_routes(df)
+            df = self.__add_s2s_id_new(df)
+            self.data = df
+        except Exception as e:
+            print(f"Error procesando nuevos datos: {str(e)}")
             raise
 
     def __region_state(self, state: str) -> str:
@@ -92,6 +137,7 @@ class UpdateData:
         Returns:
             pd.DataFrame: DataFrame con los resultados de la consulta
         """
+        conn = None
         try:
             # Cargar datos en chunks para optimizar memoria
             chunk_size = 10000
@@ -99,8 +145,10 @@ class UpdateData:
             
             for file_name in ['segment_bill_items', 'segment_bills', 'segments', 
                             'segments_lanes', 'shipments', 'shipments_details']:
+                file_path = self.folder / f"{file_name}.csv"
+                print(f"Intentando leer archivo: {file_path}")
                 dfs[file_name] = pd.concat(
-                    pd.read_csv(f"{self.folder}{file_name}.csv", chunksize=chunk_size)
+                    pd.read_csv(file_path, chunksize=chunk_size, low_memory=False)
                 )
 
             # Filtrar segment_bill_items antes de cargarlo en SQLite
@@ -166,7 +214,8 @@ class UpdateData:
             print(f"Error en la consulta SQL: {str(e)}")
             raise
         finally:
-            conn.close()
+            if conn is not None:
+                conn.close()
 
     def __write_carriers(self):
         df = pd.read_csv(f"{self.folder}carriers_info.csv")

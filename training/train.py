@@ -54,7 +54,7 @@ class TrainModels:
     - Preprocesamiento y normalización de datos
     """
     
-    def __init__(self, broker_id: str, config: Optional[ModelConfig] = None):
+    def __init__(self, broker_id: str, config: Optional[ModelConfig] = None, new_data_folder: Optional[str] = None):
         """
         Inicializa la clase TrainModels.
 
@@ -70,8 +70,10 @@ class TrainModels:
         
         try:
             self._create_folders()
-            processing = ProcessingData(broker_id)
-            self.data = processing.get_data()
+            processing = ProcessingData(broker_id, train_data_folder=new_data_folder)
+            self.dirty_data = processing.dirty_data
+            self.dirty_data.to_csv(f'past_data/base_data_{self.broker_id}.csv', index=False)
+            self.data = processing.clean_data
             
             if self.data.empty:
                 raise ValueError("No hay datos disponibles para entrenar")
@@ -393,6 +395,8 @@ class TrainModels:
         """
         base_path = self.models_dir / ('models_distance' if is_distance else 'models_s2s')
         saved_files = []
+        scalers_x = []
+        scalers_y = []
         
         for key, model in models.items():
             try:
@@ -405,11 +409,9 @@ class TrainModels:
                     joblib.dump(model[1], str(scaler_x_path))
                     joblib.dump(model[2], str(scaler_y_path))
                     
-                    saved_files.extend([
-                        f'rnn_model_{key}.h5',
-                        f'scaler_X_{key}.pkl',
-                        f'scaler_y_{key}.pkl'
-                    ])
+                    saved_files.append(f'rnn_model_{key}.h5')
+                    scalers_x.append(f'scaler_X_{key}.pkl')
+                    scalers_y.append(f'scaler_y_{key}.pkl')
                 else:
                     model_path = base_path / f'{model_type}_models/{model_type}_model_{key}.pkl'
                     joblib.dump(model, str(model_path))
@@ -419,6 +421,8 @@ class TrainModels:
                 logger.error(f"Error guardando modelo {model_type} para {key}: {str(e)}")
                 continue
         
+        if model_type == 'rnn':
+            return saved_files, scalers_x, scalers_y
         return saved_files
     
     def get_distance_models(self) -> None:
@@ -426,12 +430,33 @@ class TrainModels:
         try:
             svr_models, lr_models, rnn_models = self._train_distance_models()
             
+            # Obtener las etiquetas que tienen todos los modelos entrenados
+            common_labels = set(svr_models.keys()) & set(lr_models.keys()) & set(rnn_models.keys())
+            
+            # Filtrar y guardar solo los modelos de las etiquetas comunes
+            rnn_files, scalers_x, scalers_y = self._save_models(
+                {k: rnn_models[k] for k in common_labels}, 
+                'rnn', 
+                True
+            )
+            
             saved_files = {
-                'models': ['short', 'long'],
-                'lr_models': self._save_models(lr_models, 'lr', True),
-                'svr_models': self._save_models(svr_models, 'svr', True),
-                'rnn_models': self._save_models(rnn_models, 'rnn', True)
+                'models': list(common_labels),
+                'lr_models': self._save_models({k: lr_models[k] for k in common_labels}, 'lr', True),
+                'svr_models': self._save_models({k: svr_models[k] for k in common_labels}, 'svr', True),
+                'rnn_models': rnn_files,
+                'rnn_scaler_x': scalers_x,
+                'rnn_scaler_y': scalers_y
             }
+            
+            # Verificar que todos los arrays tienen la misma longitud
+            lengths = {k: len(v) for k, v in saved_files.items()}
+            if len(set(lengths.values())) > 1:
+                logger.warning(f"Longitudes diferentes en saved_files de distancia: {lengths}")
+                # Encontrar la longitud mínima
+                min_length = min(lengths.values())
+                # Truncar todos los arrays a la longitud mínima
+                saved_files = {k: v[:min_length] for k, v in saved_files.items()}
             
             pd.DataFrame(saved_files).to_csv(
                 self.output_dir / 'paths_distance_models.csv',
@@ -447,14 +472,39 @@ class TrainModels:
         try:
             svr_models, lr_models, rnn_models, new_models = self._train_route_models()
             
+            # Obtener las rutas que tienen todos los modelos entrenados
+            common_routes = set(svr_models.keys()) & set(lr_models.keys()) & set(rnn_models.keys()) & set(new_models.keys())
+            
+            # Filtrar las rutas y sus nombres
+            filtered_routes_id = []
+            filtered_routes = []
+            for route_id in common_routes:
+                route_name = self.data[self.data['s2s_id'] == route_id]['s2s_route'].iloc[0]
+                filtered_routes_id.append(route_id)
+                filtered_routes.append(route_name)
+            
+            # Filtrar y guardar solo los modelos de las rutas comunes
+            rnn_files, scalers_x, scalers_y = self._save_models({k: rnn_models[k] for k in common_routes}, 'rnn')
+            
             saved_files = {
-                's2s_id': self.routes_id,
-                's2s_route': self.routes,
-                'lr_models': self._save_models(lr_models, 'lr'),
-                'svr_models': self._save_models(svr_models, 'svr'),
-                'rnn_models': self._save_models(rnn_models, 'rnn'),
-                'new_models': self._save_models(new_models, 'new')
+                's2s_id': filtered_routes_id,
+                's2s_route': filtered_routes,
+                'lr_models': self._save_models({k: lr_models[k] for k in common_routes}, 'lr'),
+                'svr_models': self._save_models({k: svr_models[k] for k in common_routes}, 'svr'),
+                'rnn_models': rnn_files,
+                'rnn_scaler_x': scalers_x,
+                'rnn_scaler_y': scalers_y,
+                'new_models': self._save_models({k: new_models[k] for k in common_routes}, 'new')
             }
+            
+            # Verificar que todos los arrays tienen la misma longitud
+            lengths = {k: len(v) for k, v in saved_files.items()}
+            if len(set(lengths.values())) > 1:
+                logger.warning(f"Longitudes diferentes en saved_files: {lengths}")
+                # Encontrar la longitud mínima
+                min_length = min(lengths.values())
+                # Truncar todos los arrays a la longitud mínima
+                saved_files = {k: v[:min_length] for k, v in saved_files.items()}
             
             pd.DataFrame(saved_files).to_csv(
                 self.output_dir / 'paths_routes_models.csv',
@@ -469,7 +519,14 @@ if __name__ == '__main__':
     try:
         broker_id = '0'
         config = ModelConfig()
-        tm = TrainModels(broker_id, config)
+        #new_data_folder = Path('../data/0/DB_0004__2025-01-27').resolve()
+        new_data_folder = Path('../data/0/DB_0005__2025-03-07').resolve()
+        print(f"Usando carpeta de datos: {new_data_folder}")
+        
+        if not new_data_folder.exists():
+            raise FileNotFoundError(f"La carpeta de datos no existe: {new_data_folder}")
+            
+        tm = TrainModels(broker_id, config, new_data_folder)
         
         # Guardar distancias
         tm.df_distances.to_csv(
@@ -478,8 +535,8 @@ if __name__ == '__main__':
         )
         
         # Entrenar modelos
-        # tm.get_models()
-        # tm.get_distance_models()
+        #tm.get_models()
+        #tm.get_distance_models()
         
     except Exception as e:
         logger.error(f"Error en el programa principal: {str(e)}")
