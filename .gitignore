@@ -1,2 +1,3 @@
 .venv/
 training/__pycache__/
+/validation/api_local/__pycache__/
