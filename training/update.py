@@ -60,6 +60,7 @@ class UpdateData:
             df = self.__add_s2s_column(df)
             df = self.__select_routes(df)
             df = self.__add_s2s_id_update(df)
+            df = self.__normalize_cities(df)
             self.data = pd.concat([self.base_df, df], ignore_index=True)
         except Exception as e:
             print(f"Error actualizando datos: {str(e)}")
@@ -74,6 +75,61 @@ class UpdateData:
         """
         return self.data
 
+    def __normalize_cities(self, df_new: pd.DataFrame) -> pd.DataFrame:
+        """
+        Normaliza las ciudades en las columnas de ubicación.
+        """
+        # (campo_afectado, campo_referencia, valor_viejo, valor_nuevo)
+        correcciones = [
+            ('state', 'state', 'mexico', 'estado de mexico'),
+            ('state', 'state', 'baja california', 'baja california norte'),
+            ('state', 'state', 'coahuila de zaragoza', 'coahuila'),
+            
+            ('state', 'city', 'ciudad de mexico', 'ciudad de mexico'),
+            ('state', 'city', 'iztapalapa', 'ciudad de mexico'),
+            
+            ('city', 'city', 'ciudad juarez', 'juarez'),
+            ('city', 'city', 'nava municipality', 'nava'),
+            ('city', 'city', 'silao de la victoria', 'silao'),
+            ('city', 'city', 'leon de los aldama', 'leon de los aldamas'),
+            ('city', 'city', 'villa de tezontepec', 'tezontepec'),
+            ('city', 'city', 'atotonilco de tula', 'atotonilco tula'),
+            ('city', 'city', 'tepeji del rio de ocampo, hgo, mexico', 'tepeji de ocampo'),
+            ('city', 'city', 'zapote del valle', 'zapote'),
+            ('city', 'city', 'san pedro tlaquepaque', 'tlaquepaque'),
+            ('city', 'city', 'robbinsville twp', 'robbinsville'),
+            ('city', 'city', 'robbinsville township', 'robbinsville'),
+            ('city', 'city', 'monroe township', 'monroe'),
+            ('city', 'city', 'south brunswick township', 'south brunswick terrace'),
+            ('city', 'city', 'north brunswick township', 'north brunswick'),
+            ('city', 'city', 'hamilton township', 'hamilton'),
+            ('city', 'city', 'pennsauken township', 'pennsauken'),
+            ('city', 'city', 'sparta township', 'sparta'),
+            ('city', 'city', 'ciudad general escobedo', 'escobedo'),
+            ('city', 'city', 'ciudad apodaca', 'apodaca'),
+            ('city', 'city', 'parque industrial ciudad mitras', 'mitras'),
+            ('city', 'city', 'ciudad de allende', 'allende'),
+            ('city', 'city', 'ciudad santa catarina', 'santa catarina'),
+            ('city', 'city', 'san pedro garza garcia', 'san pedro'),
+            ('city', 'city', 'heroica puebla de zaragoza', 'puebla de zaragoza'),
+            ('city', 'city', 'ldo', 'laredo'),
+            ('city', 'city', 'tlalnepantla de baz', 'tlalnepantla'),
+            ('city', 'city', 'santa maria totoltepec', 'san'),
+            ('city', 'city', 'jilotepec de molina enriquez', 'jilotepec'),
+            ('city', 'city', 'san cristobal nexquipayac', 'nexquipayac'),
+            ('city', 'city', 'tecamac de felipe villanueva', 'tecamac'),
+            ('city', 'city', 'san francisco coacalco', 'coacalco'),
+            ('city', 'city', 'los reyes acaquilpan', 'los reyes'),
+            ('city', 'city', 'valle de chalco solidaridad', 'chalco'),
+        ]
+        
+        df = df_new.copy()
+        for campo_mod, campo_ref, valor_viejo, valor_nuevo in correcciones:
+            df.loc[df["pickup_"+campo_ref] == valor_viejo, "pickup_"+campo_mod] = valor_nuevo
+            df.loc[df["dropoff_"+campo_ref] == valor_viejo, "dropoff_"+campo_mod] = valor_nuevo
+
+        return df
+
     def _new_broker_data(self):
         """
         Procesa datos nuevos cuando no hay datos históricos.
@@ -87,6 +143,7 @@ class UpdateData:
             df = self.__add_s2s_column(df)
             df = self.__select_routes(df)
             df = self.__add_s2s_id_new(df)
+            df = self.__normalize_cities(df)
             self.data = df
         except Exception as e:
             print(f"Error procesando nuevos datos: {str(e)}")

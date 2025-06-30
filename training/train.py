@@ -519,8 +519,8 @@ if __name__ == '__main__':
     try:
         broker_id = '0'
         config = ModelConfig()
-        #new_data_folder = Path('../data/0/DB_0004__2025-01-27').resolve()
         new_data_folder = Path('../data/0/DB_0005__2025-03-07').resolve()
+        #new_data_folder = Path('../data/0/DB_0006__2025-06-25').resolve()
         print(f"Usando carpeta de datos: {new_data_folder}")
         
         if not new_data_folder.exists():
